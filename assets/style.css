@@ -1,0 +1,10 @@
+.h{
+    transform: translateX(100%);
+    opacity: 0;
+    transition: 1s;
+    
+}
+.active{
+  transform: translateX(0%) !important ;
+  opacity: 1 !important ;
+}
