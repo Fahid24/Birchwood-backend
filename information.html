@@ -13,9 +13,24 @@
 </head>
 
 <body class="">
-    <nav class="fixed z-10  w-full top-0  left-0">
 
+    <!-- ######### 
+        ---------------
+        header / navBar  
+        ------------------
+        ####### -->
+    <nav class="fixed z-10  w-full top-0  left-0">
+        <!-- ######### 
+        ---------------
+            header top 
+        ------------------
+        ####### -->
         <div class="bg-[#808080] p-4  flex lg:mx-24 items-center justify-between">
+            <!-- ######### 
+        ---------------
+            Search 
+        ------------------
+        ####### -->
             <form class="max-w-md hidden lg:inline ">
                 <label for="default-search"
                     class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
@@ -51,7 +66,11 @@
             </div>
 
         </div>
-
+        <!-- ######### 
+        ---------------
+            Header medal 
+        ------------------
+        ####### -->
         <div class="lg:mx-24 ">
             <hr>
             <div class="bg-white    relative flex items-center lg:hidden justify-between py-2 px-6">
@@ -115,7 +134,11 @@
                     </div>
                 </div>
             </div>
-
+            <!-- ######### 
+        ---------------------
+            Header bottom 
+        ---------------------
+        ####### -->
             <ul class="bg-[#808080]  py-2 hidden  lg:flex text-white justify-around ">
                 <li class="flex items-end ">Doors & Accessories <ion-icon name="chevron-down-outline"></ion-icon>
                 </li>
@@ -130,11 +153,21 @@
         </div>
     </nav>
     <main>
-        <section class="mx-12 lg:mx-24 mt-[250px]">
+        <!-- ######### 
+        ---------------------
+            Min section
+        ---------------------
+        ####### -->
+        <section class="mx-12  lg:mx-24 mb-24 mt-[250px]">
             <div class="grid lg:grid-cols-3 gap-5">
                 <div>
+                    <!-- ######### 
+        ---------------------
+            Delivery Address card
+        ---------------------
+        ####### -->
                     <div class="bg-[#d6d2d2] p-8 grid">
-                        <h3 class="bg-[#808080] p-2 text-white text-md font-semibold">Delivery Addres</h3>
+                        <h3 class="bg-[#808080] p-2 text-white text-md font-semibold">Delivery Address</h3>
                         <select style="border-radius:0;" class="select select-bordered focus:border-0 w-full ">
                             <option disabled selected>Vision Sales Direct</option>
                             <option>Unit 15 Hulls Lane</option>
@@ -158,6 +191,11 @@
                     </div>
                 </div>
                 <div>
+                    <!-- ######### 
+        ------------------------------
+            Delivery Options card
+        ------------------------------
+        ####### -->
                     <div class="bg-[#d6d2d2] p-4 lg:p-8">
                         <h3 class="bg-[#808080] p-2 text-white text-md font-semibold">Delivery Options</h3>
                         <p class="py-5">This Basket contains items with 2 differing lead times. You can choose to
@@ -212,6 +250,11 @@
                     </div>
                 </div>
                 <div>
+                    <!-- ######### 
+        -----------------------------------
+            Delivery Information card
+        -----------------------------------
+        ####### -->
                     <div class="bg-[#d6d2d2] p-8  grid">
                         <h3 class="bg-[#808080] p-2 text-white text-md font-semibold">Delivery Information</h3>
 
@@ -231,8 +274,18 @@
                     </div>
                 </div>
             </div>
+            <button
+                class="btn lg:absolute  right-24 rounded-none border-none text-white flex items-center bg-[#6A7357]  ">
+                Continue <ion-icon class="p-1 text-black text-xl bg-white" name="chevron-forward-sharp"></ion-icon>
+            </button>
         </section>
     </main>
+
+    <!-- ######### 
+        ------------------------------
+            Footer
+        ------------------------------
+        ####### -->
     <footer>
         <div class="grid lg:flex justify-around lg:text-xl font-bold text-gray-600  ">
             <ul class="pt-8">
