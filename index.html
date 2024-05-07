@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="fixed w-full top-0  left-0">
+
+        <div class="bg-[#808080] p-4  flex lg:mx-24 items-center justify-between">
+            <form class="max-w-md hidden lg:inline ">
+                <label for="default-search"
+                    class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                    </div>
+                    <input type="search" id="default-search"
+                        class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300  bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search Mockups, Logos..." required />
+
+                    <button type="submit"
+                        class="text-white absolute end-0 top-0 bottom-0 bg-[#6A7357] hover:bg-[#CAC3B1] hover:border transition  delay-100 hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold  text-sm px-4 py-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        <ion-icon class="text-xl " name="search-outline"></ion-icon></button>
+                </div>
+            </form>
+            <p class="flex items-end text-white font-semibold">Logged in as seals acknowledgment <ion-icon
+                    name="chevron-down-outline"></ion-icon>
+            </p>
+            <div class="flex items-center text-white">
+                <p class="bg-[#6A7357] text-white text-xl p-2 mr-1 inline"><ion-icon name="person-outline"></ion-icon>
+                </p>
+                <div class="bg-[#6A7357] flex gap-3  hidden lg:flex ">
+                    <p class="flex gap-3 pl-2 items-center ">view account <ion-icon
+                            class="bg-white text-black p-1 text-xl" name="chevron-down-outline"></ion-icon></p>
+                    <button class="bg-[#9A9E81]  px-3 py-2 flex items-center gap-3">log out <ion-icon
+                            class="bg-white p-1 text-xl text-black" name="arrow-up-circle-outline"></ion-icon></button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mx-24 ">
+            <hr>
+            <div class=" pt-2 px-4 bg-[#CAC3B1] flex justify-between text-center">
+                <img class="max-w-[110px]"
+                    src="./assets/images/WhatsApp_Image_2024-05-06_at_6.45.21_PM-removebg-preview.png" alt="">
+                <div class="flex items-center gap-20">
+                    <div>
+                        <small>Basket Nett Price Total:</small>
+                        <p class="text-3xl">£3,190.50</p>
+                    </div>
+                    <div>
+                        <small>Items:</small>
+                        <p class="text-3xl">34</p>
+                        <small>View Basket</small>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#808080] py-2">
+                <ul class="flex text-white justify-around ">
+                    <li class="flex items-end ">Doors & Accessories <ion-icon name="chevron-down-outline"></ion-icon>
+                    </li>
+                    <li class="flex items-end ">Handles <ion-icon name="chevron-down-outline"></ion-icon></li>
+                    <li class="flex items-end ">Storages & Bins <ion-icon name="chevron-down-outline"></ion-icon>
+                    </li>
+                    <li class="flex items-end ">Lightning <ion-icon name="chevron-down-outline"></ion-icon></li>
+                    <li class="flex items-end ">Universal Accessories <ion-icon name="chevron-down-outline"></ion-icon>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+
+        <section class="pt-[500px]" style="background-image: url('https://i.ibb.co/pv9ZKWS/Thumbnail-greyscale-41.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+        ">
+            <div class="grid justify-items-center gap-6 bg-[#808080] p-[100px] ">
+                <div style="background: linear-gradient(to bottom, #6A7357 50%, rgb(255, 255, 255) 50%);
+                border-radius: 100%;
+                " class="text-xl font-bold text-center -mt-[208px] px-12 py-5">
+
+                    <div class="text-white pb-6">
+                        <p class="text-4xl">+</p>
+                        <p class="">Create Basket</p>
+                    </div>
+                    <div class="pt-6">
+                        <p>View Baskets</p>
+                        <p class="text-2xl">33</p>
+                    </div>
+                </div>
+                <p class="text-2xl font-semibold text-white">Welcome to Sales from 20Twenty Kitchens & Bedrooms</p>
+
+            </div>
+        </section>
+        <section class="m-24">
+            <h1 class="text-xl text-gray-600 font-bold">Doors &amp; Accessories</h1>
+            <div class="mt-8 grid grid-cols-2 lg:grid-cols-5 gap-[40px]">
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+                <div class="col card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Aldana
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDauIgBR7PnTAKP5-tCgqfelaPP7LjAYFFdAWMz4ztuw&s"
+                        alt="">
+                </div>
+            </div>
+        </section>
+        <section class="m-24">
+            <h1 class="text-xl text-gray-600 font-bold">Handles</h1>
+            <div class="mt-8 grid grid-cols-2 lg:grid-cols-5 gap-[40px]">
+                <div class="grid gap-3 card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Gola
+                    </p>
+                    <img src="https://m.media-amazon.com/images/I/81t3jEg2TfL._AC_UF1000,1000_QL80_.jpg" alt="">
+                </div>
+                <div class=" grid gap-3 card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Handles
+                    </p>
+                    <img src="https://m.media-amazon.com/images/I/81cf4GjA3kL._AC_UF1000,1000_QL80_.jpg" alt="">
+                </div>
+
+
+            </div>
+        </section>
+        <section class="m-24">
+            <h1 class="text-xl text-gray-600 font-bold">Storage & Bins</h1>
+            <div class="mt-8 grid grid-cols-2 lg:grid-cols-5 gap-[40px]">
+                <div class="grid gap-3 card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Gola
+                    </p>
+                    <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_513/at%2Fhouse%20tours%20stock%20archive%2Fcc74b26f625575e6fb5e87d5889315680ba77857"
+                        alt="">
+                </div>
+                <div class=" grid gap-3 card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Handles
+                    </p>
+                    <img src="https://justagirlandherblog.com/wp-content/uploads/2016/04/Final-Syled-BESTA-Close-680x453.jpg"
+                        alt="">
+                </div>
+                <div class="grid gap-3 card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Gola
+                    </p>
+                    <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_513/at%2Fhouse%20tours%20stock%20archive%2Fcc74b26f625575e6fb5e87d5889315680ba77857"
+                        alt="">
+                </div>
+                <div class=" grid gap-3 card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Handles
+                    </p>
+                    <img src="https://justagirlandherblog.com/wp-content/uploads/2016/04/Final-Syled-BESTA-Close-680x453.jpg"
+                        alt="">
+                </div>
+
+
+            </div>
+        </section>
+        <section class="m-24">
+            <h1 class="text-xl text-gray-600 font-bold">Lighting</h1>
+            <div class="mt-8 grid grid-cols-2 lg:grid-cols-5 gap-[40px]">
+                <div class="grid gap-3 card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Gola
+                    </p>
+                    <img src="https://assets-news.housing.com/news/wp-content/uploads/2022/02/22184203/Home-lighting-design-trends-and-ideas-A-complete-guide.jpg"
+                        alt="">
+                </div>
+                <div class=" grid gap-3 card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Handles
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfhrDo1O6caw0tKr-5PZglTBq3TqsD2mQJpGU5asBFFdtUUp_qf7XBTpdoB9rw_EgKtb4&usqp=CAU"
+                        alt="">
+                </div>
+                <div class="grid gap-3 card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Gola
+                    </p>
+                    <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_513/at%2Fhouse%20tours%20stock%20archive%2Fcc74b26f625575e6fb5e87d5889315680ba77857"
+                        alt="">
+                </div>
+                <div class=" grid gap-3 card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Handles
+                    </p>
+                    <img src="https://justagirlandherblog.com/wp-content/uploads/2016/04/Final-Syled-BESTA-Close-680x453.jpg"
+                        alt="">
+                </div>
+                <div class=" grid gap-3 card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Handles
+                    </p>
+                    <img src="https://justagirlandherblog.com/wp-content/uploads/2016/04/Final-Syled-BESTA-Close-680x453.jpg"
+                        alt="">
+                </div>
+
+
+            </div>
+        </section>
+        <section class="m-24">
+            <h1 class="text-xl text-gray-600 font-bold">Universal Accessories</h1>
+            <div class="mt-8 grid grid-cols-2 lg:grid-cols-5 gap-[40px]">
+                <div class="grid gap-3 card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Gola
+                    </p>
+                    <img src="https://assets-news.housing.com/news/wp-content/uploads/2022/02/22184203/Home-lighting-design-trends-and-ideas-A-complete-guide.jpg"
+                        alt="">
+                </div>
+                <div class=" grid gap-3 card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Handles
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfhrDo1O6caw0tKr-5PZglTBq3TqsD2mQJpGU5asBFFdtUUp_qf7XBTpdoB9rw_EgKtb4&usqp=CAU"
+                        alt="">
+                </div>
+                <div class="grid gap-3 card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Gola
+                    </p>
+                    <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_513/at%2Fhouse%20tours%20stock%20archive%2Fcc74b26f625575e6fb5e87d5889315680ba77857"
+                        alt="">
+                </div>
+                <div class=" grid gap-3 card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Handles
+                    </p>
+                    <img src="https://justagirlandherblog.com/wp-content/uploads/2016/04/Final-Syled-BESTA-Close-680x453.jpg"
+                        alt="">
+                </div>
+                <div class=" grid gap-3 card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Handles
+                    </p>
+                    <img src="https://justagirlandherblog.com/wp-content/uploads/2016/04/Final-Syled-BESTA-Close-680x453.jpg"
+                        alt="">
+                </div>
+                <div class="grid gap-3 card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Gola
+                    </p>
+                    <img src="https://assets-news.housing.com/news/wp-content/uploads/2022/02/22184203/Home-lighting-design-trends-and-ideas-A-complete-guide.jpg"
+                        alt="">
+                </div>
+                <div class=" grid gap-3 card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Handles
+                    </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfhrDo1O6caw0tKr-5PZglTBq3TqsD2mQJpGU5asBFFdtUUp_qf7XBTpdoB9rw_EgKtb4&usqp=CAU"
+                        alt="">
+                </div>
+                <div class="grid gap-3 card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Gola
+                    </p>
+                    <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_513/at%2Fhouse%20tours%20stock%20archive%2Fcc74b26f625575e6fb5e87d5889315680ba77857"
+                        alt="">
+                </div>
+                <div class=" grid gap-3 card card-body">
+                    <p class="product-name mb-1 font-semibold" style="height: 16px;">
+                        Handles
+                    </p>
+                    <img src="https://justagirlandherblog.com/wp-content/uploads/2016/04/Final-Syled-BESTA-Close-680x453.jpg"
+                        alt="">
+                </div>
+
+
+
+            </div>
+        </section>
+        <section class="bg-[#6A7357] py-8 px-4 text-white">
+            <div>
+                <h1 class="text-3xl font-semibold text-center"> Your dedicated account contacts at Uform </h1>
+                <div class="grid my-8 gap-20 lg:gap-0 lg:grid-cols-2 justify-items-center items-center">
+                    <div
+                        class="grid justify-center justify-items-center text-center lg:flex lg:text-left  items-center gap-10">
+                        <img class="max-w-[200px] round-full" src="https://i.ibb.co/LPZxpgL/Daco-5511364.png" alt="">
+                        <div>
+                            <h2 class="text-2xl font-semibold">Mark McNulty</h2>
+                            <small>Area Sales Manager</small>
+                            <p class="grid justify-items-center lg:flex lg:gap-20 lg:mt-8"> <span
+                                    class="text-orange-300">Email:</span>mmcnuity@uform.co.uk
+                            </p>
+                            <p class="grid justify-items-center lg:flex lg:gap-[67px]"> <span
+                                    class="text-orange-300">Mobile:</span>07971 625585</p>
+                        </div>
+
+                    </div>
+                    <div class="grid justify-center lg:flex items-center gap-10">
+                        <img class="max-w-[200px] round-full" src="https://i.ibb.co/pwk1J7B/Png-Item-1284293.png"
+                            alt="">
+                        <div class="text-center lg:text-start">
+                            <h2 class="text-2xl font-semibold">Lisa McLarnon</h2>
+                            <small>Key Account Manager</small>
+                            <p class="grid justify-items-center lg:flex lg:gap-20 lg:mt-8"> <span
+                                    class="text-orange-300">Email:</span>Imciarnon@uform.co.uk</p>
+                            <p class="grid justify-items-center lg:flex lg:gap-[67px]"> <span
+                                    class="text-orange-300">Mobile:</span>0287965-1642</p>
+                        </div>
+
+                    </div>
+                 
+                </div>
+                <p class="text-center">Or call customer services on +44 (0) 287965 1650</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="grid lg:flex justify-around text-xl font-bold text-gray-600  ">
+            <ul class="pt-8">
+                <li class="py-2">Why Uform?</li>
+                <li>Doors</li>
+                <li class="py-2">Lighting</li>
+                <li>Handles</li>
+                <li class="py-2">Furniture</li>
+            </ul>
+
+            <ul class="pt-8">
+                <li class="py-2">Design</li>
+                <li>Help & Support</li>
+                <li class="py-2">News</li>
+                <li>Contact</li>
+
+            </ul>
+            <ul class="pt-8 -z-10">
+                <li class="py-2">Stay Connected</li>
+                <div class="grid grid-cols-2 gap-3 font-semibold">
+                    <li class="flex gap-3 items-center "><ion-icon style="border-radius: 100%;"
+                            class="bg-[#CAC3B1] p-2  text-white text-3xl" name="logo-facebook"></ion-icon> Facebook</li>
+                    <li class="flex gap-3 items-center "><ion-icon style="border-radius: 100%;"
+                            class="bg-[#CAC3B1] p-2  text-white text-3xl" name="logo-instagram"></ion-icon> Instagram
+                    </li>
+                    <li class="flex gap-3 items-center "><ion-icon style="border-radius: 100%;"
+                            class="bg-[#CAC3B1] p-2  text-white text-3xl" name="logo-youtube"></ion-icon>Youtube</li>
+                    <li class="flex gap-3 items-center "><ion-icon style="border-radius: 100%;"
+                            class="bg-[#CAC3B1] p-2  text-white text-3xl" name="logo-instagram"></ion-icon>Linkedin</li>
+                    <li class="flex gap-3 items-center "><ion-icon style="border-radius: 100%;"
+                            class="bg-[#CAC3B1] p-2  text-white text-3xl" name="logo-google"></ion-icon>Google </li>
+                </div>
+            </ul>
+            <img class="max-w-[250px] hidden lg:inline " src="./assets/images/footer-image.png" alt="">
+        </div>
+        <div class="grid py-10 lg:py-0 gap-4 lg:flex lg:items-center lg:gap-20 px-6 lg:px-12">
+            <img class="max-w-[110px] " src="./assets/images/WhatsApp_Image_2024-05-06_at_6.45.21_PM-removebg-preview.png" alt="">
+            <p>2024 Uform |
+                Terms & Conditions |
+                Privacy Policy |
+                Cookie Policy |
+                Report a bug</p>
+        </div>
+    </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
