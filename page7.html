@@ -152,9 +152,226 @@
 
         </div>
     </nav>
-   <main>
-    
-   </main>
+    <main>
+        <section class="mx-4 grid lg:mx-24  mt-[250px]">
+            <div>
+                <h1 class="text-2xl text-gray-500 pt-4 font-semibold">Your Account</h1>
+                <p class="lg:text-xl text-sm text-gray-500 font-semibold py-4">Please contact your Key Contact if any of this information is incorrect or needs
+                    to
+
+                    be updated.</p>
+
+
+                <div class="bg-[#d6d2d2] ">
+                    <!-- ######### 
+                        ---------------------
+                           section navigation 
+                        ---------------------
+                        ####### -->
+                    <ul class="grid   lg:flex gap-1">
+                        <li class=""><button
+                                class=" btn w-full hover:bg-[#6A7357] text-white rounded-none border-none bg-[#808080] ">User
+                                Information</button></li>
+                        <li><button
+                                class=" btn w-full hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Company
+                                Information</button></li>
+                        <li><button
+                                class=" btn w-full hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Key
+                                Contacts</button></li>
+                        <li><button
+                                class=" btn w-full hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Price
+                                Lists</button>
+                        </li>
+                        <li><button
+                                class=" btn w-full hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Delivery
+                                Addresses</button></li>
+                        <li><button
+                                class=" btn w-full hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Baskets</button>
+                        </li>
+                        <li><button
+                                class=" btn w-full  hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Orders</button>
+                        </li>
+                        <li><button
+                                class=" btn w-full hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Pay
+                                Outstanding</button></li>
+                        <li><button
+                                class=" btn w-full hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Quote
+                                Conversion</button></li>
+                        <li><button
+                                class=" btn w-full hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Promo
+                                Code</button>
+                        </li>
+
+                    </ul>
+                    <div class="p-4">
+                        <h1>Orders</h1>
+                        <div class="grid gap-2 items-center mb-3 lg:grid-cols-4 mt-2">
+                            <div class="self-end">
+                                <label for="search">Search</label>
+                                <input id="search" type="text" name="search" placeholder="search" required
+                                    class="focus:border-[#6A7357] mt-2 input-field date">
+                            </div>
+                            <div class="self-end">
+                                <label for="status">Status:</label>
+                                <select id="status" style="border-radius:0;" class=" p-2 focus:border-[#6A7357] mt-2 input-field date border border-gray-600 focus:border-0 w-full ">
+                                    <option disabled selected>All</option>
+                                    <option>Unit 15 Hulls Lane</option>
+                                    <option>Moira Road</option>
+                                    <option>Unit 15 Hulls Lane</option>
+                                    <option>Moira Road</option>
+                                    <option>Unit 15 Hulls Lane</option>
+                                    <option>Moira Road</option>
+                                </select>
+                            </div>
+                            <div class="self-end">
+                                <label for="date">Created Between</label>
+                                <input id="date" type="date" name="date" required
+                                    class="focus:border-[#6A7357] mt-2 input-field date">
+                            </div>
+
+                            <div class="self-end">
+
+                                <input id="date" type="date" name="date" required
+                                    class="focus:border-[#6A7357] mt-2 input-field date">
+                            </div>
+                        </div>
+
+                        <p class="bg-[#808080] text-white p-2">page 1 of 1</p>
+
+                        <!-- ######### 
+                        ----------------------------------------------
+                            large screen and mobile table section 
+                        -----------------------------------------------
+                        ####### -->
+                        <div class="">
+                          <div class="lg:inline hidden">
+                            <table class="table  text-center">
+                                <!-- head -->
+                                <thead>
+                                    <tr>
+
+                                        <th>Order No.</th>
+                                        <th>Order Ref</th>
+                                        <th>Data order</th>
+                                        <th>Total</th>
+                                        <th>Convert Quote</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- row 1 -->
+                                    <tr>
+
+                                        <td class="text-[#6A7357] font-bold">
+                                            AA064383
+                                        </td>
+                                        <td>
+                                            Simple handle Quate
+                                        </td>
+                                        <td>16/11/22</td>
+                                        <td>£31.55</td>
+
+                                        <td class="grid justify-center">
+                                            <label>
+                                                <input type="checkbox" class="checkbox" />
+                                            </label>
+                                        </td>
+                                        
+                                    </tr>
+                                    <!-- row 2 -->
+
+                                    <tr>
+
+                                        <td class="text-[#6A7357] font-bold">
+                                            AA064383
+                                        </td>
+                                        <td>
+                                            Simple handle Quate
+                                        </td>
+                                        <td>16/11/22</td>
+                                        <td>£31.55</td>
+
+                                        <td class="grid justify-center">
+                                            <label>
+                                                <input type="checkbox" class="checkbox" />
+                                            </label>
+                                        </td>
+                                        
+                                    </tr>
+
+
+                                </tbody>
+
+
+                            </table>
+                          </div>
+                            <table class="bg-white grid lg:hidden border-2 border-gray-300">
+                                <tr>
+                                    <th>Order No.</th>
+                                    <td class="text-[#6A7357] font-bold">
+                                        AA064383
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Order Ref</th>
+                                    <td>
+                                        Simple handle Quate
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Data Order</th>
+                                    <td>16/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Gross Price Total</th>
+                                    <td>£31.55</td>
+                                </tr>
+                                <tr>
+                                    <th>Convert Quote</th>
+                                    <td class="grid justify-center">
+                                        <label>
+                                            <input type="checkbox" class="checkbox" />
+                                        </label>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="border-2 grid lg:hidden  border-gray-300 ">
+                                <tr>
+                                    <th>Order No.</th>
+                                    <td class="text-[#6A7357] font-bold">
+                                        AA064383
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Order Ref</th>
+                                    <td>
+                                        Simple handle Quate
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Data Order</th>
+                                    <td>16/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Gross Price Total</th>
+                                    <td>£31.55</td>
+                                </tr>
+                                <tr>
+                                    <th>Convert Quote</th>
+                                    <td class="grid justify-center">
+                                        <label>
+                                            <input type="checkbox" class="checkbox" />
+                                        </label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
     <!-- ######### 
         ------------------------------
             Footer
@@ -205,6 +422,7 @@
                 Report a bug</p>
         </div>
     </footer>
+   
     <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.tailwindcss.com"></script>

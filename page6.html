@@ -170,7 +170,7 @@
                         ####### -->
                     <ul class="grid   lg:flex gap-1">
                         <li class=""><button
-                                class=" btn w-full text-left hover:bg-[#6A7357] text-white rounded-none border-none bg-[#808080] ">User
+                                class=" btn w-full hover:bg-[#6A7357] text-white rounded-none border-none bg-[#808080] ">User
                                 Information</button></li>
                         <li><button
                                 class=" btn w-full hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Company
@@ -205,7 +205,7 @@
                     </ul>
                     <div class="p-4">
                         <h1>Quote Conversion</h1>
-                        <div class="grid lg:grid-cols-3 mt-2">
+                        <div class="grid gap-2 mb-3 lg:grid-cols-3 mt-2">
                             <div>
                                 <label for="search">Search</label>
                                 <input id="search" type="text" name="search" placeholder="search" required
@@ -410,26 +410,6 @@
                 Report a bug</p>
         </div>
     </footer>
-    <script>
-        const datepicker = flatpickr("#date-picker", {});
-
-        // styling the date picker
-        const calendarContainer = datepicker.calendarContainer;
-        const calendarMonthNav = datepicker.monthNav;
-        const calendarNextMonthNav = datepicker.nextMonthNav;
-        const calendarPrevMonthNav = datepicker.prevMonthNav;
-        const calendarDaysContainer = datepicker.daysContainer;
-
-        calendarContainer.className = `${calendarContainer.className} bg-white p-4 border border-blue-gray-50 rounded-lg shadow-lg shadow-blue-gray-500/10 font-sans text-sm font-normal text-blue-gray-500 focus:outline-none break-words whitespace-normal`;
-
-        calendarMonthNav.className = `${calendarMonthNav.className} flex items-center justify-between mb-4 [&>div.flatpickr-month]:-translate-y-3`;
-
-        calendarNextMonthNav.className = `${calendarNextMonthNav.className} absolute !top-2.5 !right-1.5 h-6 w-6 bg-transparent hover:bg-blue-gray-50 !p-1 rounded-md transition-colors duration-300`;
-
-        calendarPrevMonthNav.className = `${calendarPrevMonthNav.className} absolute !top-2.5 !left-1.5 h-6 w-6 bg-transparent hover:bg-blue-gray-50 !p-1 rounded-md transition-colors duration-300`;
-
-        calendarDaysContainer.className = `${calendarDaysContainer.className} [&_span.flatpickr-day]:!rounded-md [&_span.flatpickr-day.selected]:!bg-gray-900 [&_span.flatpickr-day.selected]:!border-gray-900`;
-    </script>
     <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.tailwindcss.com"></script>
