@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.5/dist/full.min.css" rel="stylesheet" type="text/css" />
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
 
     <title>Document</title>
 </head>
@@ -154,33 +155,141 @@
     <main>
         <section class="mx-12 hidden lg:grid lg:mx-24  mt-[250px]">
             <div>
-                <h1 class="text-2xl font-semibold">Your Account</h1>
-                <p class="text-xl">Please contact your Key Contact if any of this information is incorrect or needs to
+                <h1 class="text-2xl pt-4 font-semibold">Your Account</h1>
+                <p class="text-xl py-4">Please contact your Key Contact if any of this information is incorrect or needs to
+
                     be updated.</p>
+
+
                 <div class="bg-[#d6d2d2] ">
+                    <!-- ######### 
+                        ---------------------
+                           section nebigation 
+                        ---------------------
+                        ####### -->
                     <ul class="flex gap-1">
-                        <li><button class=" btn hover:bg-[#6A7357] text-white rounded-none border-none bg-[#808080] ">User
+                        <li><button
+                                class=" btn hover:bg-[#6A7357] text-white rounded-none border-none bg-[#808080] ">User
                                 Information</button></li>
-                        <li><button class=" btn hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Company
+                        <li><button
+                                class=" btn hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Company
                                 Information</button></li>
-                        <li><button class=" btn hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Key
+                        <li><button
+                                class=" btn hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Key
                                 Contacts</button></li>
-                        <li><button class=" btn hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Price Lists</button>
+                        <li><button
+                                class=" btn hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Price
+                                Lists</button>
                         </li>
-                        <li><button class=" btn hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Delivery
+                        <li><button
+                                class=" btn hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Delivery
                                 Addresses</button></li>
-                        <li><button class=" btn hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Baskets</button>
+                        <li><button
+                                class=" btn hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Baskets</button>
                         </li>
-                        <li><button class=" btn  hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Orders</button>
+                        <li><button
+                                class=" btn  hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Orders</button>
                         </li>
-                        <li><button class=" btn hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Pay
+                        <li><button
+                                class=" btn hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Pay
                                 Outstanding</button></li>
-                        <li><button class=" btn hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Quote
+                        <li><button
+                                class=" btn hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Quote
                                 Conversion</button></li>
-                        <li><button class=" btn hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Promo Code</button>
+                        <li><button
+                                class=" btn hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Promo
+                                Code</button>
                         </li>
 
                     </ul>
+                    <div class="p-4">
+                        <h1>Quote Conversion</h1>
+                        <div class="grid grid-cols-3 mt-2">
+                            <div>
+                                <label for="search">Search</label>
+                            <input id="search" type="text" name="search" placeholder="search" required
+                                class="focus:border-[#6A7357] mt-2 input-field date">
+                            </div>
+                            <div>
+                                <label for="date">Created Between</label>
+                            <input id="date" type="date" name="date" required
+                                class="focus:border-[#6A7357] mt-2 input-field date">
+                            </div>
+
+                            <div class="self-end">
+                                
+                                <input id="date" type="date" name="date" required
+                                class="focus:border-[#6A7357] mt-2 input-field date">
+                            </div>
+                        </div>
+
+                        <p class="bg-[#808080] text-white p-2">page 1 of 1</p>
+                        <div class="overflow-x-auto">
+                            <table class="table text-center">
+                                <!-- head -->
+                                <thead>
+                                    <tr>
+
+                                        <th>Order No.</th>
+                                        <th>Order Ref</th>
+                                        <th>Data order</th>
+                                        <th>Total</th>
+                                        <th>Convert Quote</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- row 1 -->
+                                    <tr>
+
+                                        <td class="text-[#6A7357] font-bold">
+                                            AA064383
+                                        </td>
+                                        <td>
+                                            Simple handle Quate
+                                        </td>
+                                        <td>16/11/22</td>
+                                        <td>£31.55</td>
+
+                                        <td class="grid justify-center">
+                                            <label>
+                                                <input type="checkbox" class="checkbox" />
+                                            </label>
+                                        </td>
+                                        <th>
+
+                                        </th>
+                                    </tr>
+                                    <!-- row 2 -->
+
+                                    <tr>
+
+                                        <td class="text-[#6A7357] font-bold">
+                                            AA064383
+                                        </td>
+                                        <td>
+                                            Simple handle Quate
+                                        </td>
+                                        <td>16/11/22</td>
+                                        <td>£31.55</td>
+
+                                        <td class="grid justify-center">
+                                            <label>
+                                                <input type="checkbox" class="checkbox" />
+                                            </label>
+                                        </td>
+                                        <th>
+
+                                        </th>
+                                    </tr>
+
+
+                                </tbody>
+
+
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -236,9 +345,29 @@
                 Report a bug</p>
         </div>
     </footer>
+    <script>
+        const datepicker = flatpickr("#date-picker", {});
+
+        // styling the date picker
+        const calendarContainer = datepicker.calendarContainer;
+        const calendarMonthNav = datepicker.monthNav;
+        const calendarNextMonthNav = datepicker.nextMonthNav;
+        const calendarPrevMonthNav = datepicker.prevMonthNav;
+        const calendarDaysContainer = datepicker.daysContainer;
+
+        calendarContainer.className = `${calendarContainer.className} bg-white p-4 border border-blue-gray-50 rounded-lg shadow-lg shadow-blue-gray-500/10 font-sans text-sm font-normal text-blue-gray-500 focus:outline-none break-words whitespace-normal`;
+
+        calendarMonthNav.className = `${calendarMonthNav.className} flex items-center justify-between mb-4 [&>div.flatpickr-month]:-translate-y-3`;
+
+        calendarNextMonthNav.className = `${calendarNextMonthNav.className} absolute !top-2.5 !right-1.5 h-6 w-6 bg-transparent hover:bg-blue-gray-50 !p-1 rounded-md transition-colors duration-300`;
+
+        calendarPrevMonthNav.className = `${calendarPrevMonthNav.className} absolute !top-2.5 !left-1.5 h-6 w-6 bg-transparent hover:bg-blue-gray-50 !p-1 rounded-md transition-colors duration-300`;
+
+        calendarDaysContainer.className = `${calendarDaysContainer.className} [&_span.flatpickr-day]:!rounded-md [&_span.flatpickr-day.selected]:!bg-gray-900 [&_span.flatpickr-day.selected]:!border-gray-900`;
+    </script>
     <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

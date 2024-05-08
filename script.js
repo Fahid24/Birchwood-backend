@@ -19,5 +19,3 @@ document.querySelectorAll(".item").forEach((n) =>
 );
 
 
-
-
