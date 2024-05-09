@@ -9,7 +9,22 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                fontFamily: {
+                    sans: ["Roboto", "sans-serif"],
+                    body: ["Roboto", "sans-serif"],
+                    mono: ["ui-monospace", "monospace"],
+                },
+            },
+            corePlugins: {
+                preflight: false,
+            },
+        };
+    </script>
     <title>Document</title>
 </head>
 
@@ -157,7 +172,8 @@
         <section class="mx-4 grid lg:mx-24  mt-[250px]">
             <div>
                 <h1 class="text-2xl text-gray-500 pt-4 font-semibold">Your Account</h1>
-                <p class="lg:text-xl text-sm text-gray-500 font-semibold py-4">Please contact your Key Contact if any of this information is incorrect or needs
+                <p class="lg:text-xl text-sm text-gray-500 font-semibold py-4">Please contact your Key Contact if any of
+                    this information is incorrect or needs
                     to
 
                     be updated.</p>
@@ -170,37 +186,37 @@
                         ---------------------
                         ####### -->
                     <ul class="grid   lg:flex gap-1">
-                        <li class=""><button
+                        <li class=""><a
                                 class=" btn w-full hover:bg-[#6A7357] text-white rounded-none border-none bg-[#808080] ">User
-                                Information</button></li>
-                        <li><button
+                                Information</a></li>
+                        <li><a
                                 class=" btn w-full hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Company
-                                Information</button></li>
-                        <li><button
+                                Information</a></li>
+                        <li><a
                                 class=" btn w-full hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Key
-                                Contacts</button></li>
-                        <li><button
+                                Contacts</a></li>
+                        <li><a
                                 class=" btn w-full hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Price
-                                Lists</button>
+                                Lists</a>
                         </li>
-                        <li><button
+                        <li><a
                                 class=" btn w-full hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Delivery
-                                Addresses</button></li>
-                        <li><button
-                                class=" btn w-full hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Baskets</button>
+                                Addresses</a></li>
+                        <li><a
+                                class=" btn w-full hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Baskets</a>
                         </li>
-                        <li><button
-                                class=" btn w-full  hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Orders</button>
+                        <li><a
+                                class=" btn w-full  hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Orders</a>
                         </li>
-                        <li><button
+                        <li><a
                                 class=" btn w-full hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Pay
-                                Outstanding</button></li>
-                        <li><button
+                                Outstanding</a></li>
+                        <li><a
                                 class=" btn w-full hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Quote
-                                Conversion</button></li>
-                        <li><button
+                                Conversion</a></li>
+                        <li><a
                                 class=" btn w-full hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Promo
-                                Code</button>
+                                Code</a>
                         </li>
 
                     </ul>
@@ -214,7 +230,8 @@
                             </div>
                             <div class="self-end">
                                 <label for="status">Status:</label>
-                                <select id="status" style="border-radius:0;" class=" p-2 focus:border-[#6A7357] mt-2 input-field date border border-gray-600 focus:border-0 w-full ">
+                                <select id="status" style="border-radius:0;"
+                                    class=" p-2 focus:border-[#6A7357] mt-2 input-field date border border-gray-600 focus:border-0 w-full ">
                                     <option disabled selected>All</option>
                                     <option>Unit 15 Hulls Lane</option>
                                     <option>Moira Road</option>
@@ -245,198 +262,223 @@
                         -----------------------------------------------
                         ####### -->
                         <div class="">
-                          <div class="lg:inline hidden">
-                            <table class="table  text-center">
-                                <!-- head -->
-                                <thead>
-                                    <tr>
+                            <div class="lg:inline hidden">
+                                <table class="table  text-center">
+                                    <!-- head -->
+                                    <thead>
+                                        <tr>
 
-                                        <th>Order No.</th>
-                                        <th>Range</th>
-                                        <th>Order Ref</th>
-                                        <th>Date Ordered</th>
-                                        <th>Despatch Date</th>
-                                        <th>Invoice Date</th>
-                                        <th>Gross Price Total</th>
-                                        <th>Order type</th>
-                                        <th>Status</th>
-                                        <th>Invoice PDF</th>
-                                        
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <!-- row 1 -->
-                                    <tr>
+                                            <th>Order No.</th>
+                                            <th>Range</th>
+                                            <th>Order Ref</th>
+                                            <th>Date Ordered</th>
+                                            <th>Despatch Date</th>
+                                            <th>Invoice Date</th>
+                                            <th>Gross Price Total</th>
+                                            <th>Order type</th>
+                                            <th>Status</th>
+                                            <th>Invoice PDF</th>
 
-                                        <td class="text-[#6A7357] font-bold">
-                                            AA064383
-                                        </td>
-                                        <td>
-                                           <small> HANDLES ONLY-EXTOCK</small>
-                                        </td>
-                                        <td><small> MARK MCLAUGHLIN</small></td>
-                                        <td>25/04/24</td>
-                                        <td>26/4/24</td>
-                                        <td>26/4/24</td>
-                                        <td>£31.55</td>
-                                        <td>Office</td>
-                                        <td>Invoiced</td>
-                                        <td><a download href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png" class="btn w-full bg-[#6A7357] text-white rounded-none border-none"   >Download Invoice</a></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- row 1 -->
+                                        <tr>
 
-                                        
-                                        
-                                    </tr>
-                                    <tr>
-
-                                        <td class="text-[#6A7357] font-bold">
-                                            MM064383
-                                        </td>
-                                        <td>
-                                           <small> HANDLES ONLY-EXTOCK</small>
-                                        </td>
-                                        <td><small> MARK MCLAUGHLIN</small></td>
-                                        <td>25/04/24</td>
-                                        <td>26/4/24</td>
-                                        <td>26/4/24</td>
-                                        <td>£33.55</td>
-                                        <td>Web</td>
-                                        <td>Invoiced</td>
-                                        <td><a download href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png" class="btn w-full bg-[#6A7357] text-white rounded-none border-none"   >Download Invoice</a></td>
-
-                                        
-                                        
-                                    </tr>
-                                    <tr>
-
-                                        <td class="text-[#6A7357] font-bold">
-                                            MM064383
-                                        </td>
-                                        <td>
-                                           <small> HANDLES ONLY-EXTOCK</small>
-                                        </td>
-                                        <td><small> MARK MCLAUGHLIN</small></td>
-                                        <td>25/04/24</td>
-                                        <td>26/4/24</td>
-                                        <td>26/4/24</td>
-                                        <td>£33.55</td>
-                                        <td>Web</td>
-                                        <td>Invoiced</td>
-                                        <td><a download href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png" class="btn w-full bg-[#6A7357] text-white rounded-none border-none"   >Download Invoice</a></td>
-
-                                        
-                                        
-                                    </tr>
-                                    <tr>
-
-                                        <td class="text-[#6A7357] font-bold">
-                                            MM064383
-                                        </td>
-                                        <td>
-                                           <small> HANDLES ONLY-EXTOCK</small>
-                                        </td>
-                                        <td><small> MARK MCLAUGHLIN</small></td>
-                                        <td>25/04/24</td>
-                                        <td>26/4/24</td>
-                                        <td>26/4/24</td>
-                                        <td>£33.55</td>
-                                        <td>Web</td>
-                                        <td>Invoiced</td>
-                                        <td><a download href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png" class="btn w-full bg-[#6A7357] text-white rounded-none border-none"   >Download Invoice</a></td>
-
-                                        
-                                        
-                                    </tr>
-                                    <tr>
-
-                                        <td class="text-[#6A7357] font-bold">
-                                            MM064383
-                                        </td>
-                                        <td>
-                                           <small> HANDLES ONLY-EXTOCK</small>
-                                        </td>
-                                        <td><small> MARK MCLAUGHLIN</small></td>
-                                        <td>25/04/24</td>
-                                        <td>26/4/24</td>
-                                        <td>26/4/24</td>
-                                        <td>£33.55</td>
-                                        <td>Web</td>
-                                        <td>Invoiced</td>
-                                        <td><a download href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png" class="btn w-full bg-[#6A7357] text-white rounded-none border-none"   >Download Invoice</a></td>
-
-                                        
-                                        
-                                    </tr>
-                                    <tr>
-
-                                        <td class="text-[#6A7357] font-bold">
-                                            MM064383
-                                        </td>
-                                        <td>
-                                           <small> HANDLES ONLY-EXTOCK</small>
-                                        </td>
-                                        <td><small> MARK MCLAUGHLIN</small></td>
-                                        <td>25/04/24</td>
-                                        <td>26/4/24</td>
-                                        <td>26/4/24</td>
-                                        <td>£33.55</td>
-                                        <td>Web</td>
-                                        <td>Invoiced</td>
-                                        <td><a download href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png" class="btn w-full bg-[#6A7357] text-white rounded-none border-none"   >Download Invoice</a></td>
-
-                                        
-                                        
-                                    </tr>
-                                    <tr>
-
-                                        <td class="text-[#6A7357] font-bold">
-                                            MM064383
-                                        </td>
-                                        <td>
-                                           <small> HANDLES ONLY-EXTOCK</small>
-                                        </td>
-                                        <td><small> MARK MCLAUGHLIN</small></td>
-                                        <td>25/04/24</td>
-                                        <td>26/4/24</td>
-                                        <td>26/4/24</td>
-                                        <td>£33.55</td>
-                                        <td>Web</td>
-                                        <td>Invoiced</td>
-                                        <td><a download href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png" class="btn w-full bg-[#6A7357] text-white rounded-none border-none"   >Download Invoice</a></td>
-
-                                        
-                                        
-                                    </tr>
-                                    <tr>
-
-                                        <td class="text-[#6A7357] font-bold">
-                                            MM064383
-                                        </td>
-                                        <td>
-                                           <small> HANDLES ONLY-EXTOCK</small>
-                                        </td>
-                                        <td><small> MARK MCLAUGHLIN</small></td>
-                                        <td>25/04/24</td>
-                                        <td>26/4/24</td>
-                                        <td>26/4/24</td>
-                                        <td>£33.55</td>
-                                        <td>Web</td>
-                                        <td>Invoiced</td>
-                                        <td><a download href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png" class="btn w-full bg-[#6A7357] text-white rounded-none border-none"   >Download Invoice</a></td>
-
-                                        
-                                        
-                                    </tr>
-                                    <!-- row 2 -->
-
-                                   
+                                            <td class="text-[#6A7357] font-bold">
+                                                AA064383
+                                            </td>
+                                            <td>
+                                                <small> HANDLES ONLY-EXTOCK</small>
+                                            </td>
+                                            <td><small> MARK MCLAUGHLIN</small></td>
+                                            <td>25/04/24</td>
+                                            <td>26/4/24</td>
+                                            <td>26/4/24</td>
+                                            <td>£31.55</td>
+                                            <td>Office</td>
+                                            <td>Invoiced</td>
+                                            <td><a download
+                                                    href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
+                                                    class="btn w-full bg-[#6A7357] text-white rounded-none border-none">Download
+                                                    Invoice</a></td>
 
 
-                                </tbody>
+
+                                        </tr>
+                                        <tr>
+
+                                            <td class="text-[#6A7357] font-bold">
+                                                MM064383
+                                            </td>
+                                            <td>
+                                                <small> HANDLES ONLY-EXTOCK</small>
+                                            </td>
+                                            <td><small> MARK MCLAUGHLIN</small></td>
+                                            <td>25/04/24</td>
+                                            <td>26/4/24</td>
+                                            <td>26/4/24</td>
+                                            <td>£33.55</td>
+                                            <td>Web</td>
+                                            <td>Invoiced</td>
+                                            <td><a download
+                                                    href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
+                                                    class="btn w-full bg-[#6A7357] text-white rounded-none border-none">Download
+                                                    Invoice</a></td>
 
 
-                            </table>
-                          </div>
-                            <table class="bg-white grid lg:hidden border-2 border-gray-300">
+
+                                        </tr>
+                                        <tr>
+
+                                            <td class="text-[#6A7357] font-bold">
+                                                MM064383
+                                            </td>
+                                            <td>
+                                                <small> HANDLES ONLY-EXTOCK</small>
+                                            </td>
+                                            <td><small> MARK MCLAUGHLIN</small></td>
+                                            <td>25/04/24</td>
+                                            <td>26/4/24</td>
+                                            <td>26/4/24</td>
+                                            <td>£33.55</td>
+                                            <td>Web</td>
+                                            <td>Invoiced</td>
+                                            <td><a download
+                                                    href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
+                                                    class="btn w-full bg-[#6A7357] text-white rounded-none border-none">Download
+                                                    Invoice</a></td>
+
+
+
+                                        </tr>
+                                        <tr>
+
+                                            <td class="text-[#6A7357] font-bold">
+                                                MM064383
+                                            </td>
+                                            <td>
+                                                <small> HANDLES ONLY-EXTOCK</small>
+                                            </td>
+                                            <td><small> MARK MCLAUGHLIN</small></td>
+                                            <td>25/04/24</td>
+                                            <td>26/4/24</td>
+                                            <td>26/4/24</td>
+                                            <td>£33.55</td>
+                                            <td>Web</td>
+                                            <td>Invoiced</td>
+                                            <td><a download
+                                                    href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
+                                                    class="btn w-full bg-[#6A7357] text-white rounded-none border-none">Download
+                                                    Invoice</a></td>
+
+
+
+                                        </tr>
+                                        <tr>
+
+                                            <td class="text-[#6A7357] font-bold">
+                                                MM064383
+                                            </td>
+                                            <td>
+                                                <small> HANDLES ONLY-EXTOCK</small>
+                                            </td>
+                                            <td><small> MARK MCLAUGHLIN</small></td>
+                                            <td>25/04/24</td>
+                                            <td>26/4/24</td>
+                                            <td>26/4/24</td>
+                                            <td>£33.55</td>
+                                            <td>Web</td>
+                                            <td>Invoiced</td>
+                                            <td><a download
+                                                    href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
+                                                    class="btn w-full bg-[#6A7357] text-white rounded-none border-none">Download
+                                                    Invoice</a></td>
+
+
+
+                                        </tr>
+                                        <tr>
+
+                                            <td class="text-[#6A7357] font-bold">
+                                                MM064383
+                                            </td>
+                                            <td>
+                                                <small> HANDLES ONLY-EXTOCK</small>
+                                            </td>
+                                            <td><small> MARK MCLAUGHLIN</small></td>
+                                            <td>25/04/24</td>
+                                            <td>26/4/24</td>
+                                            <td>26/4/24</td>
+                                            <td>£33.55</td>
+                                            <td>Web</td>
+                                            <td>Invoiced</td>
+                                            <td><a download
+                                                    href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
+                                                    class="btn w-full bg-[#6A7357] text-white rounded-none border-none">Download
+                                                    Invoice</a></td>
+
+
+
+                                        </tr>
+                                        <tr>
+
+                                            <td class="text-[#6A7357] font-bold">
+                                                MM064383
+                                            </td>
+                                            <td>
+                                                <small> HANDLES ONLY-EXTOCK</small>
+                                            </td>
+                                            <td><small> MARK MCLAUGHLIN</small></td>
+                                            <td>25/04/24</td>
+                                            <td>26/4/24</td>
+                                            <td>26/4/24</td>
+                                            <td>£33.55</td>
+                                            <td>Web</td>
+                                            <td>Invoiced</td>
+                                            <td><a download
+                                                    href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
+                                                    class="btn w-full bg-[#6A7357] text-white rounded-none border-none">Download
+                                                    Invoice</a></td>
+
+
+
+                                        </tr>
+                                        <tr>
+
+                                            <td class="text-[#6A7357] font-bold">
+                                                MM064383
+                                            </td>
+                                            <td>
+                                                <small> HANDLES ONLY-EXTOCK</small>
+                                            </td>
+                                            <td><small> MARK MCLAUGHLIN</small></td>
+                                            <td>25/04/24</td>
+                                            <td>26/4/24</td>
+                                            <td>26/4/24</td>
+                                            <td>£33.55</td>
+                                            <td>Web</td>
+                                            <td>Invoiced</td>
+                                            <td><a download
+                                                    href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
+                                                    class="btn w-full bg-[#6A7357] text-white rounded-none border-none">Download
+                                                    Invoice</a></td>
+
+
+
+                                        </tr>
+                                        <!-- row 2 -->
+
+
+
+
+                                    </tbody>
+
+
+                                </table>
+                            </div>
+                           <div class="grid gap-3">
+                            <table class="bg-white grid lg:hidden  border-2 border-black">
                                 <tr>
                                     <th>Order No.</th>
                                     <td class="text-[#6A7357] font-bold">
@@ -444,29 +486,49 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>Order Ref</th>
+                                    <th>Range</th>
                                     <td>
-                                        Simple handle Quate
+
+                                        SIMPLE HANDLE QUATE
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>Data Order</th>
+                                    <th>Order Ref</th>
+                                    <td>
+
+                                        CONNOLLY
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Data Ordered</th>
                                     <td>16/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Despatch Date</th>
+                                    <td>19/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Invoice date</th>
+                                    <td>19/11/22</td>
                                 </tr>
                                 <tr>
                                     <th>Gross Price Total</th>
                                     <td>£31.55</td>
                                 </tr>
                                 <tr>
-                                    <th>Convert Quote</th>
-                                    <td class="grid justify-center">
-                                        <label>
-                                            <input type="checkbox" class="checkbox" />
-                                        </label>
-                                    </td>
+                                    <th>Order Type</th>
+                                    <td>Office</td>
                                 </tr>
+                                <tr>
+                                    <th>Invoice PDF</th>
+                                    <td><a download
+                                            href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
+                                            class="btn w-full bg-[#6A7357] text-white rounded-none border-none">Download
+                                            Invoice</a></td>
+                                </tr>
+                               
                             </table>
-                            <table class="border-2 grid lg:hidden  border-gray-300 ">
+                            <table class="bg-[#cfcaca] grid lg:hidden border-2 border-black">
                                 <tr>
                                     <th>Order No.</th>
                                     <td class="text-[#6A7357] font-bold">
@@ -474,28 +536,382 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>Order Ref</th>
+                                    <th>Range</th>
                                     <td>
-                                        Simple handle Quate
+
+                                        SIMPLE HANDLE QUATE
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>Data Order</th>
+                                    <th>Order Ref</th>
+                                    <td>
+
+                                        CONNOLLY
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Data Ordered</th>
                                     <td>16/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Despatch Date</th>
+                                    <td>19/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Invoice date</th>
+                                    <td>19/11/22</td>
                                 </tr>
                                 <tr>
                                     <th>Gross Price Total</th>
                                     <td>£31.55</td>
                                 </tr>
                                 <tr>
-                                    <th>Convert Quote</th>
-                                    <td class="grid justify-center">
-                                        <label>
-                                            <input type="checkbox" class="checkbox" />
-                                        </label>
+                                    <th>Order Type</th>
+                                    <td>Web</td>
+                                </tr>
+                                <tr>
+                                    <th>Invoice PDF</th>
+                                    <td><a download
+                                            href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
+                                            class="btn w-full bg-[#6A7357] text-white rounded-none border-none">Download
+                                            Invoice</a></td>
+                                </tr>
+                              
+                            </table>
+                            <table class="bg-white grid lg:hidden border-2 border-black">
+                                <tr>
+                                    <th>Order No.</th>
+                                    <td class="text-[#6A7357] font-bold">
+                                        AA064383
                                     </td>
                                 </tr>
+                                <tr>
+                                    <th>Range</th>
+                                    <td>
+
+                                        SIMPLE HANDLE QUATE
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Order Ref</th>
+                                    <td>
+
+                                        CONNOLLY
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Data Ordered</th>
+                                    <td>16/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Despatch Date</th>
+                                    <td>19/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Invoice date</th>
+                                    <td>19/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Gross Price Total</th>
+                                    <td>£31.55</td>
+                                </tr>
+                                <tr>
+                                    <th>Order Type</th>
+                                    <td>Web</td>
+                                </tr>
+                                <tr>
+                                    <th>Invoice PDF</th>
+                                    <td><a download
+                                            href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
+                                            class="btn w-full bg-[#6A7357] text-white rounded-none border-none">Download
+                                            Invoice</a></td>
+                                </tr>
+                                
                             </table>
+                            <table class="bg-[#cfcaca] grid lg:hidden border-2 border-black">
+                                <tr>
+                                    <th>Order No.</th>
+                                    <td class="text-[#6A7357] font-bold">
+                                        AA064383
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Range</th>
+                                    <td>
+
+                                        SIMPLE HANDLE QUATE
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Order Ref</th>
+                                    <td>
+
+                                        CONNOLLY
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Data Ordered</th>
+                                    <td>16/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Despatch Date</th>
+                                    <td>19/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Invoice date</th>
+                                    <td>19/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Gross Price Total</th>
+                                    <td>£31.55</td>
+                                </tr>
+                                <tr>
+                                    <th>Order Type</th>
+                                    <td>Web</td>
+                                </tr>
+                                <tr>
+                                    <th>Invoice PDF</th>
+                                    <td><a download
+                                            href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
+                                            class="btn w-full bg-[#6A7357] text-white rounded-none border-none">Download
+                                            Invoice</a></td>
+                                </tr>
+                                
+                            </table>
+                            <table class="bg-white grid lg:hidden border-2 border-black">
+                                <tr>
+                                    <th>Order No.</th>
+                                    <td class="text-[#6A7357] font-bold">
+                                        AA064383
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Range</th>
+                                    <td>
+
+                                        SIMPLE HANDLE QUATE
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Order Ref</th>
+                                    <td>
+
+                                        CONNOLLY
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Data Ordered</th>
+                                    <td>16/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Despatch Date</th>
+                                    <td>19/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Invoice date</th>
+                                    <td>19/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Gross Price Total</th>
+                                    <td>£31.55</td>
+                                </tr>
+                                <tr>
+                                    <th>Order Type</th>
+                                    <td>Web</td>
+                                </tr>
+                                <tr>
+                                    <th>Invoice PDF</th>
+                                    <td><a download
+                                            href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
+                                            class="btn w-full bg-[#6A7357] text-white rounded-none border-none">Download
+                                            Invoice</a></td>
+                                </tr>
+                               
+                            </table>
+                            <table class="bg-[#cfcaca] grid lg:hidden border-2 border-black">
+                                <tr>
+                                    <th>Order No.</th>
+                                    <td class="text-[#6A7357] font-bold">
+                                        AA064383
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Range</th>
+                                    <td>
+
+                                        SIMPLE HANDLE QUATE
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Order Ref</th>
+                                    <td>
+
+                                        CONNOLLY
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Data Ordered</th>
+                                    <td>16/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Despatch Date</th>
+                                    <td>19/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Invoice date</th>
+                                    <td>19/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Gross Price Total</th>
+                                    <td>£31.55</td>
+                                </tr>
+                                <tr>
+                                    <th>Order Type</th>
+                                    <td>Web</td>
+                                </tr>
+                                <tr>
+                                    <th>Invoice PDF</th>
+                                    <td><a download
+                                            href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
+                                            class="btn w-full bg-[#6A7357] text-white rounded-none border-none">Download
+                                            Invoice</a></td>
+                                </tr>
+                                
+                            </table>
+                            <table class="bg-white grid lg:hidden border-2 border-black">
+                                <tr>
+                                    <th>Order No.</th>
+                                    <td class="text-[#6A7357] font-bold">
+                                        AA064383
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Range</th>
+                                    <td>
+
+                                        SIMPLE HANDLE QUATE
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Order Ref</th>
+                                    <td>
+
+                                        CONNOLLY
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Data Ordered</th>
+                                    <td>16/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Despatch Date</th>
+                                    <td>19/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Invoice date</th>
+                                    <td>19/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Gross Price Total</th>
+                                    <td>£31.55</td>
+                                </tr>
+                                <tr>
+                                    <th>Order Type</th>
+                                    <td>Web</td>
+                                </tr>
+                                <tr>
+                                    <th>Invoice PDF</th>
+                                    <td><a download
+                                            href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
+                                            class="btn w-full bg-[#6A7357] text-white rounded-none border-none">Download
+                                            Invoice</a></td>
+                                </tr>
+                                
+                            </table>
+                            <table class="bg-[#cfcaca] grid lg:hidden border-2 border-black">
+                                <tr>
+                                    <th>Order No.</th>
+                                    <td class="text-[#6A7357] font-bold">
+                                        AA064383
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Range</th>
+                                    <td>
+
+                                        SIMPLE HANDLE QUATE
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Order Ref</th>
+                                    <td>
+
+                                        CONNOLLY
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Data Ordered</th>
+                                    <td>16/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Despatch Date</th>
+                                    <td>19/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Invoice date</th>
+                                    <td>19/11/22</td>
+                                </tr>
+                                <tr>
+                                    <th>Gross Price Total</th>
+                                    <td>£31.55</td>
+                                </tr>
+                                <tr>
+                                    <th>Order Type</th>
+                                    <td>Web</td>
+                                </tr>
+                                <tr>
+                                    <th>Invoice PDF</th>
+                                    <td><a download
+                                            href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
+                                            class="btn w-full bg-[#6A7357] text-white rounded-none border-none">Download
+                                            Invoice</a></td>
+                                </tr>
+                                
+                            </table>
+                           </div>
+                            
+                            <div>
+
+                                <ul class="flex gap-2 mt-6">
+                                    <li><a
+                                            class="btn rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">1</a>
+                                    </li>
+                                    <li><a
+                                            class="btn rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">2</a>
+                                    </li>
+                                    <li><a
+                                            class="btn rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">3</a>
+                                    </li>
+                                    <li><a
+                                            class="btn hidden lg:flex rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">4</a>
+                                    </li>
+                                    <li><a
+                                            class="btn hidden lg:flex rounded-none rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">5</a>
+                                    </li>
+                                    <li><a
+                                            class="btn hidden lg:flex rounded-none rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">6</a>
+                                    </li>
+                                    <li><a
+                                            class="btn hidden lg:flex rounded-none rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">...</a>
+                                    </li>
+                                    <li><a
+                                            class="btn rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">Next</a>
+                                    </li>
+                                    <li><a
+                                            class="btn rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">Last</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -553,8 +969,9 @@
                 Report a bug</p>
         </div>
     </footer>
-   
+
     <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
