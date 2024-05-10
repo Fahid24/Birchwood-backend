@@ -19,35 +19,32 @@ document.querySelectorAll(".item").forEach((n) =>
 );
 
 
-
-// Hide SubMenus.
 document.querySelectorAll(".subMenu").forEach(function(subMenu) {
-  subMenu.style.display = "none";
-});
+  // Hide SubMenus.
+ 
+  subMenu.style.visibility = "hidden";
 
-// Shows SubMenu when its parent is hovered.
-document.querySelectorAll(".subMenu").forEach(function(subMenu) {
   var parent = subMenu.parentNode;
-  parent.addEventListener("mouseover", function() {
-    if (!subMenu.classList.contains("active")) {
-      subMenu.style.display = "block";
-      subMenu.classList.add("active");
-    }
-  });
-});
 
-// Hides SubMenu when mouse leaves the zone.
-document.querySelectorAll(".subMenu").forEach(function(subMenu) {
-  var parent = subMenu.parentNode;
-  parent.addEventListener("mouseleave", function() {
-    subMenu.style.display = "none";
-    subMenu.classList.remove("active");
+  // Toggle SubMenu visibility on click.
+  parent.addEventListener("click", function(event) {
+      event.preventDefault(); // Prevent default link behavior
+      if (subMenu.classList.contains("active")) {
+          subMenu.style.visibility = "hidden";
+          subMenu.classList.remove("active");
+      } else {
+          // Hide all other active submenus
+          document.querySelectorAll('.subMenu.active').forEach(function(activeSubMenu) {
+              activeSubMenu.style.visibility = 'hidden';
+              activeSubMenu.classList.remove('active');
+          });
+          subMenu.style.visibility = "visible";
+          subMenu.classList.add("active");
+      }
   });
-});
 
-// Prevents scroll to top when clicking on <a href="#">
-document.querySelectorAll('a[href="#"]').forEach(function(anchor) {
-  anchor.addEventListener("click", function(event) {
-    event.preventDefault();
+  // Prevent scroll to top when clicking on <a href="#">
+  parent.querySelector('a[href="#"]').addEventListener("click", function(event) {
+      event.preventDefault();
   });
 });
