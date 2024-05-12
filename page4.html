@@ -16,474 +16,463 @@
         header / navBar  
         ------------------
          -->
-    <nav class="fixed  w-full top-0 z-30  left-0">
-        <!-- 
-        ---------------
-            header top 
-        ------------------
-        -->
-        <div class="bg-[#808080] px-1 lg:px-0  flex lg:mx-24 items-center justify-between">
+         <nav class="fixed  w-full top-0 z-30  left-0">
             <!-- 
-        ---------------         
-        ---------------
-            Search 
-        ---------------
-        ---------------
-        -->
-            <form class="max-w-md hidden lg:inline ">
-                <label for="default-search"
-                    class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
-                <div class="relative">
-                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                        </svg>
+            ---------------
+                header top 
+            ------------------
+            -->
+            <div class="bg-[#808080] px-1 lg:pl-1 lg:px-0   flex lg:mx-24 items-center justify-between">
+                <!-- 
+            ---------------         
+            ---------------
+                Search 
+            ---------------
+            ---------------
+            -->
+                <form class="max-w-md hidden rounded-none lg:inline ">
+                    <label for="default-search"
+                        class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                            <svg class="w-3 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                            </svg>
+                        </div>
+                        <input type="search" id="default-search"
+                            class="block w-[250px] p-[2px] ps-10 text-sm rounded-none text-gray-900 border round-0 order-gray-300  bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Search" required />
+    
+                        <button type="submit"
+                            class="text-white absolute end-0 top-0 bottom-0 bg-[#6A7357] hover:bg-[#CAC3B1] hover:border transition  delay-100 hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold  text-sm px-2 py-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            <ion-icon class="text-sm " name="search-outline"></ion-icon></button>
                     </div>
-                    <input type="search" id="default-search"
-                        class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300  bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        placeholder="Search Mockups, Logos..." required />
-
-                    <button type="submit"
-                        class="text-white absolute end-0 top-0 bottom-0 bg-[#6A7357] hover:bg-[#CAC3B1] hover:border transition  delay-100 hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold  text-sm px-4 py-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        <ion-icon class="text-xl " name="search-outline"></ion-icon></button>
-                </div>
-            </form>
-
-            <div class="grid">
-                <a href="#" class="flex items-end text-white font-semibold">Logged in as seals acknowledgment <ion-icon
-                        name="chevron-down-outline"></ion-icon>
-                </a>
-                <ul class="absolute lg:top-[45px] text-md transition duration-700 ease-in-out  font-semibold subMenu ">
-
-                    <li class="w-[160%] bg-[#808080] text-white px-2">
-                        <a href="#">
-                            <div class="flex justify-between  py-1">
-                                <p class="hidden lg:inline">user information</p>
-                                <ion-icon class="ml-6 text-xl font-bold text-white bg-[#6A7357]"
-                                    name="chevron-forward-outline"></ion-icon>
-                            </div>
-                            <hr>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="flex items-center text-white">
-                <p class="bg-[#6A7357] text-white text-xl p-2 mr-1 inline"><ion-icon name="person-outline"></ion-icon>
-                </p>
-                <div class="bg-[#6A7357] flex gap-3  hidden lg:flex ">
-
-                    <div class="grid">
-                        <a href="#" class="flex items-end text-white font-semibold">
-                            <div class="flex px-2 py-2 items-center">
-                                <p class=" font-semibold">20Twenty Kitchens & Bedroo...</p>
-                                <p class="flex gap-3 pl-2 items-center ">view account <ion-icon
-                                        class="bg-white text-black p-1 text-xl" name="chevron-down-outline"></ion-icon>
-                                </p>
-                            </div>
-                        </a>
-                        <ul
-                            class="absolute lg:top-[45px] z-10 w-[29%] text-md transition duration-700 ease-in-out  font-semibold subMenu ">
-
-                            <li>
-                                <p class="bg-[#808080] p-2">Account Summary</p>
-                            </li>
-                            <hr>
-                            <li class="bg-[#cac3b1] text-black px-2 pt-2 ">
-                                <p class="flex items-center justify-between">Available Credit: <span>£5,000.00</span>
-                                </p>
-                            </li>
-                            <li class="bg-[#cac3b1] text-black px-2 py-2">
-                                <p class="flex items-center justify-between">Balance: <span>£1,223.93</span></p>
-                            </li>
-                            <li class="bg-[#cac3b1] text-black px-2 pb-2">
-                                <p class="flex items-center justify-between">Available Credit: <span>£3,776.07</span>
-                                </p>
-                            </li>
-
-                            <li class=" bg-[#6A7357] px-2 ">
-                                <a href="#">
-                                    <div class="flex justify-between  py-1">
-                                        <p class="hidden lg:inline">Import CSV</p>
-                                        <ion-icon class="ml-6 text-xl font-bold text-black bg-[#cac3b1]"
-                                            name="chevron-forward-outline"></ion-icon>
-                                    </div>
-                                    <hr>
-                                </a>
-                            </li>
-                            <li class=" bg-[#6A7357] px-2 ">
-                                <a href="#">
-                                    <div class="flex justify-between  py-1">
-                                        <p class="hidden lg:inline">Your Company Information</p>
-                                        <ion-icon class="ml-6 text-xl font-bold text-black bg-[#cac3b1]"
-                                            name="chevron-forward-outline"></ion-icon>
-                                    </div>
-                                    <hr>
-                                </a>
-                            </li>
-                            <li class=" bg-[#6A7357] px-2 ">
-                                <a href="#">
-                                    <div class="flex justify-between  py-1">
-                                        <p class="hidden lg:inline">Your Price Lists</p>
-                                        <ion-icon class="ml-6 text-xl font-bold text-black bg-[#cac3b1]"
-                                            name="chevron-forward-outline"></ion-icon>
-                                    </div>
-                                    <hr>
-                                </a>
-                            </li>
-                            <li class=" bg-[#6A7357] px-2 ">
-                                <a href="#">
-                                    <div class="flex justify-between  py-1">
-                                        <p class="hidden lg:inline">Your Addresses</p>
-                                        <ion-icon class="ml-6 text-xl font-bold text-black bg-[#cac3b1]"
-                                            name="chevron-forward-outline"></ion-icon>
-                                    </div>
-                                    <hr>
-                                </a>
-                            </li>
-                            <li class=" bg-[#6A7357] px-2 ">
-                                <a href="#">
-                                    <div class="flex justify-between  py-1">
-                                        <p class="hidden lg:inline">Your Baskets</p>
-                                        <ion-icon class="ml-6 text-xl font-bold text-black bg-[#cac3b1]"
-                                            name="chevron-forward-outline"></ion-icon>
-                                    </div>
-                                    <hr>
-                                </a>
-                            </li>
-                            <li class=" bg-[#6A7357] px-2 ">
-                                <a href="#">
-                                    <div class="flex justify-between  py-1">
-                                        <p class="hidden lg:inline">Your Orders</p>
-                                        <ion-icon class="ml-6 text-xl font-bold text-black bg-[#cac3b1]"
-                                            name="chevron-forward-outline"></ion-icon>
-                                    </div>
-                                    <hr>
-                                </a>
-                            </li>
-                            <li class=" bg-[#6A7357] px-2 ">
-                                <a href="#">
-                                    <div class="flex justify-between  py-1">
-                                        <p class="hidden lg:inline">Pay Outstanding</p>
-                                        <ion-icon class="ml-6 text-xl font-bold text-black bg-[#cac3b1]"
-                                            name="chevron-forward-outline"></ion-icon>
-                                    </div>
-                                    <hr>
-                                </a>
-                            </li>
-                            <li class=" bg-[#6A7357] px-2 ">
-                                <a href="#">
-                                    <div class="flex justify-between  py-1">
-                                        <p class="hidden lg:inline">Quote Conversion</p>
-                                        <ion-icon class="ml-6 text-xl font-bold text-black bg-[#cac3b1]"
-                                            name="chevron-forward-outline"></ion-icon>
-                                    </div>
-                                    <hr>
-                                </a>
-                            </li>
-                            <li class=" bg-[#6A7357] px-2 ">
-                                <a href="#">
-                                    <div class="flex justify-between  py-1">
-                                        <p class="hidden lg:inline">Your Promo Codes</p>
-                                        <ion-icon class="ml-6 text-xl font-bold text-black bg-[#cac3b1]"
-                                            name="chevron-forward-outline"></ion-icon>
-                                    </div>
-                                    <hr>
-                                </a>
-                            </li>
-                            <li class=" bg-[#6A7357] px-2 ">
-                                <a href="#">
-                                    <div class="flex justify-between  py-1">
-                                        <p class="hidden lg:inline">Marketing Downloads</p>
-                                        <ion-icon class="ml-6 text-xl font-bold text-black bg-[#cac3b1]"
-                                            name="chevron-forward-outline"></ion-icon>
-                                    </div>
-                                    <hr>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <button class="bg-[#9A9E81]  px-3 py-2 flex items-center gap-3">log out <ion-icon
-                            class="bg-white p-1 text-xl text-black" name="arrow-up-circle-outline"></ion-icon></button>
-                </div>
-            </div>
-
-        </div>
-        <!-- 
-        ---------------
-            header medal 
-        ------------------
-        -->
-        <div class="lg:mx-24 ">
-            <hr>
-            <div class="bg-white    relative flex items-center lg:hidden justify-between py-2 px-6">
-                <img class="max-w-[70px] "
-                    src="./assets/images/WhatsApp_Image_2024-05-06_at_6.45.21_PM-removebg-preview.png" alt="">
-                <button class="btn ">
-                    <ion-icon class=" btn1 text-[#6A7357] text-[40px]" name="list-circle-outline"></ion-icon>
-                </button>
-                <div style="border-radius: 5px;" class="absolute border h memu bg-white top-0 z-10 right-0">
-                    <ul class="  grid  gap-3 p-4 m-8  ">
-                        <li>
-                            <button class="btn-cross">
-                                <ion-icon class="  text-[40px]" name="close-outline"></ion-icon>
-
-                            </button>
-                        </li>
-                        <li>
-                            <form class="max-w-md  ">
-                                <label for="default-search"
-                                    class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
-                                <div class="relative">
-                                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                                stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                                        </svg>
-                                    </div>
-                                    <input type="search" id="default-search"
-                                        class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300  bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="Search Mockups, Logos..." required />
-
-                                    <button type="submit"
-                                        class="text-white absolute end-0 top-0 bottom-0 bg-[#6A7357] hover:bg-[#CAC3B1] hover:border transition  delay-100 hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold  text-sm px-4 py-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                        <ion-icon class="text-xl " name="search-outline"></ion-icon></button>
+                </form>
+    
+                <div class="grid">
+                    <a href="#" class="flex items-end text-white text-sm">Logged in as seals acknowledgment <ion-icon
+                            name="chevron-down-outline"></ion-icon>
+                    </a>
+                    <ul class="absolute lg:top-[35px] text-md transition duration-700 ease-in-out  font-semibold subMenu ">
+    
+                        <li class="w-[150%] bg-[#808080] text-white px-2">
+                            <a href="#">
+                                <div class="flex justify-between  py-1">
+                                    <p class="hidden lg:inline text-sm">user information</p>
+                                    <ion-icon class="ml-6 text-xl font-bold text-white bg-[#6A7357]"
+                                        name="chevron-forward-outline"></ion-icon>
                                 </div>
-                            </form>
+                                <hr>
+                            </a>
                         </li>
-                        <li>Doors & Accessories</li>
-                        <li>Handles</li>
-                        <li>Storages & Bins</li>
-                        <li>Lightning</li>
-                        <li>Universal Accessories</li>
                     </ul>
                 </div>
+                <div class="flex items-center text-white">
+                    <p class="bg-[#6A7357] text-white text-md px-1 m-1 inline"><ion-icon name="person-outline"></ion-icon>
+                    </p>
+                    <div class="bg-[#6A7357] flex gap-3  hidden lg:flex ">
+    
+                        <div class="grid">
+                            <a href="#" class="flex items-center text-white ">
+                                <div class="flex px-2 py- items-center">
+                                    <p class=" text-sm ">20Twenty Kitchens & Bedroo...</p>
+                                    <p class="flex gap-3 pl-2 text-sm items-center ">view account <ion-icon
+                                            class="bg-white text-black p- text-xl" name="chevron-down-outline"></ion-icon>
+                                    </p>
+                                </div>
+                            </a>
+                            <ul
+                                class="absolute lg:top-[35px] z-10 w-[25%] text-md transition duration-700 ease-in-out   subMenu ">
+    
+                                <li>
+                                    <p class="bg-[#808080] p-2">Account Summary</p>
+                                </li>
+                                <hr>
+                                <li class="bg-[#cac3b1] text-black px-2 pt-2 ">
+                                    <p class="flex items-center justify-between">Available Credit: <span>£5,000.00</span>
+                                    </p>
+                                </li>
+                                <li class="bg-[#cac3b1] text-black px-2 py-2">
+                                    <p class="flex items-center justify-between">Balance: <span>£1,223.93</span></p>
+                                </li>
+                                <li class="bg-[#cac3b1] text-black px-2 pb-2">
+                                    <p class="flex items-center justify-between">Available Credit: <span>£3,776.07</span>
+                                    </p>
+                                </li>
+    
+                                <li class=" bg-[#6A7357] px-2 ">
+                                    <a href="#">
+                                        <div class="flex justify-between  py-1">
+                                            <p class="hidden lg:inline">Import CSV</p>
+                                            <ion-icon class="ml-6 text-xl font-bold text-black bg-[#cac3b1]"
+                                                name="chevron-forward-outline"></ion-icon>
+                                        </div>
+                                        <hr>
+                                    </a>
+                                </li>
+                                <li class=" bg-[#6A7357] px-2 ">
+                                    <a href="#">
+                                        <div class="flex justify-between  py-1">
+                                            <p class="hidden lg:inline">Your Company Information</p>
+                                            <ion-icon class="ml-6 text-xl font-bold text-black bg-[#cac3b1]"
+                                                name="chevron-forward-outline"></ion-icon>
+                                        </div>
+                                        <hr>
+                                    </a>
+                                </li>
+                                <li class=" bg-[#6A7357] px-2 ">
+                                    <a href="#">
+                                        <div class="flex justify-between  py-1">
+                                            <p class="hidden lg:inline">Your Price Lists</p>
+                                            <ion-icon class="ml-6 text-xl font-bold text-black bg-[#cac3b1]"
+                                                name="chevron-forward-outline"></ion-icon>
+                                        </div>
+                                        <hr>
+                                    </a>
+                                </li>
+                                <li class=" bg-[#6A7357] px-2 ">
+                                    <a href="#">
+                                        <div class="flex justify-between  py-1">
+                                            <p class="hidden lg:inline">Your Addresses</p>
+                                            <ion-icon class="ml-6 text-xl font-bold text-black bg-[#cac3b1]"
+                                                name="chevron-forward-outline"></ion-icon>
+                                        </div>
+                                        <hr>
+                                    </a>
+                                </li>
+                                <li class=" bg-[#6A7357] px-2 py-2 ">
+                                    <a href="#">
+                                        <div class="flex justify-between   ">
+                                            <p class="hidden lg:inline">Your Baskets</p>
+                                            <ion-icon class="ml-6 text-md font-bold text-black bg-[#cac3b1]"
+                                                name="chevron-forward-outline"></ion-icon>
+                                        </div>
+                                        <hr>
+                                    </a>
+                                </li>
+                                <li class=" bg-[#6A7357] px-2 ">
+                                    <a href="#">
+                                        <div class="flex justify-between  py-1">
+                                            <p class="hidden lg:inline">Your Orders</p>
+                                            <ion-icon class="ml-6 text-xl font-bold text-black bg-[#cac3b1]"
+                                                name="chevron-forward-outline"></ion-icon>
+                                        </div>
+                                        <hr>
+                                    </a>
+                                </li>
+                                <li class=" bg-[#6A7357] px-2 ">
+                                    <a href="#">
+                                        <div class="flex justify-between  py-1">
+                                            <p class="hidden lg:inline">Pay Outstanding</p>
+                                            <ion-icon class="ml-6 text-xl font-bold text-black bg-[#cac3b1]"
+                                                name="chevron-forward-outline"></ion-icon>
+                                        </div>
+                                        <hr>
+                                    </a>
+                                </li>
+                                <li class=" bg-[#6A7357] px-2 ">
+                                    <a href="#">
+                                        <div class="flex justify-between  py-1">
+                                            <p class="hidden lg:inline">Quote Conversion</p>
+                                            <ion-icon class="ml-6 text-xl font-bold text-black bg-[#cac3b1]"
+                                                name="chevron-forward-outline"></ion-icon>
+                                        </div>
+                                        <hr>
+                                    </a>
+                                </li>
+                                <li class=" bg-[#6A7357] px-2 ">
+                                    <a href="#">
+                                        <div class="flex justify-between  py-1">
+                                            <p class="hidden lg:inline">Your Promo Codes</p>
+                                            <ion-icon class="ml-6 text-xl font-bold text-black bg-[#cac3b1]"
+                                                name="chevron-forward-outline"></ion-icon>
+                                        </div>
+                                        <hr>
+                                    </a>
+                                </li>
+                                <li class=" bg-[#6A7357] px-2 ">
+                                    <a href="#">
+                                        <div class="flex justify-between  py-1">
+                                            <p class="hidden lg:inline">Marketing Downloads</p>
+                                            <ion-icon class="ml-6 text-xl font-bold text-black bg-[#cac3b1]"
+                                                name="chevron-forward-outline"></ion-icon>
+                                        </div>
+                                        <hr>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="bg-[#9A9E81]  pl-3 py- flex items-center gap-3">log out <ion-icon
+                                class="bg-white p-1 m-1 text-md text-black" name="arrow-up-circle-outline"></ion-icon></button>
+                    </div>
+                </div>
+    
             </div>
             <!-- 
-        ---------------------
-            header bottom 
-        ---------------------
-        -->
-            <div class=" px-4 bg-[#CAC3B1] flex justify-between items-center text-center">
-                <img class="max-w-[60px] max-h-[60px] hidden lg:inline"
-                    src="./assets/images/WhatsApp_Image_2024-05-06_at_6.45.21_PM-removebg-preview.png" alt="">
-                <div class="flex items-center gap-10 lg:gap-20">
-                    <div class=" flex gap-1 lg:gap-0 items-center lg:inline">
-                        <small><span class="hidden lg:inline">Basket</span> Nett Price Total:</small>
-                        <p class="lg:text-2xl">£3,190.50</p>
+            ---------------
+                header medal 
+            ------------------
+            -->
+            <div class="lg:mx-24 ">
+                <hr>
+                <div class="bg-white    relative flex items-center lg:hidden justify-between py-2 px-6">
+                    <img class="max-w-[70px] "
+                        src="./assets/images/WhatsApp_Image_2024-05-06_at_6.45.21_PM-removebg-preview.png" alt="">
+                    <button class="btn">
+                        <ion-icon class=" btn1 text-[#6A7357] text-[40px]" name="list-circle-outline"></ion-icon>
+                    </button>
+                    <div style="border-radius: 5px;" class="absolute border h memu bg-white top-0 z-10 right-0">
+                        <ul class="  grid  gap-3 p-4 m-8  ">
+                            <li>
+                                <button class="btn-cross">
+                                    <ion-icon class="  text-[40px]" name="close-outline"></ion-icon>
+    
+                                </button>
+                            </li>
+                            <li>
+                                <form class="max-w-md  ">
+                                    <label for="default-search"
+                                        class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                                    <div class="relative">
+                                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                            </svg>
+                                        </div>
+                                        <input type="search" id="default-search"
+                                            class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300  bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                            placeholder="Search Mockups, Logos..." required />
+    
+                                        <button type="submit"
+                                            class="text-white absolute end-0 top-0 bottom-0 bg-[#6A7357] hover:bg-[#CAC3B1] hover:border transition  delay-100 hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold  text-sm px-4 py-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                            <ion-icon class="text-xl " name="search-outline"></ion-icon></button>
+                                    </div>
+                                </form>
+                            </li>
+                            <li>Doors & Accessories</li>
+                            <li>Handles</li>
+                            <li>Storages & Bins</li>
+                            <li>Lightning</li>
+                            <li>Universal Accessories</li>
+                        </ul>
                     </div>
-                    <div class="flex items-center gap-1 lg:inline">
-                        <small>Items:</small>
-                        <p class="text-sm lg:text-2xl">34</p>
-                        <div class="flex items-center"> <small class="hidden lg:inline">View Basket</small>
-                            <ion-icon class="p-1 ml-6 text-xl font-bold text-white bg-[#6A7357]"
-                                name="chevron-forward-outline"></ion-icon>
+                </div>
+                <!-- 
+            ---------------------
+                header bottom 
+            ---------------------
+            -->
+                <div class=" px-4 bg-[#CAC3B1] flex justify-between items-center text-center">
+                    <img class="max-w-[60px] max-h-[60px] hidden lg:inline"
+                        src="./assets/images/WhatsApp_Image_2024-05-06_at_6.45.21_PM-removebg-preview.png" alt="">
+                    <div class="flex items-center gap-10 lg:gap-20">
+                        <div class=" flex gap-1 lg:gap-0 items-center lg:inline">
+                            <small><span class="hidden lg:inline">Basket</span> Nett Price Total:</small>
+                            <p class="lg:text-2xl">£3,190.50</p>
+                        </div>
+                        <div class="flex items-center gap-1 lg:inline">
+                            <small>Items:</small>
+                            <p class="text-sm lg:text-2xl">34</p>
+                            <div class="flex items-center"> <small class="hidden lg:inline">View Basket</small>
+                                <ion-icon class="p-1 ml-2 mb-1 text-sm  text-white bg-[#6A7357]"
+                                    name="chevron-forward-outline"></ion-icon>
+                            </div>
                         </div>
                     </div>
                 </div>
+    
+                <ul class="bg-[#808080] relative hidden  lg:flex text-white justify-around ">
+                    <li class="navbar">
+    
+                        <div class="dropdown">
+                            <button class="dropbtn">Doors & Accessories
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+    
+                                <div class="row ">
+                                    <ul class="column">
+                                        <li> <a href="#">Aldana</a></li>
+                                        <li> <a href="#">Aldana Bedroom</a></li>
+                                        <li> <a href="#">Arrinton</a></li>
+                                        <li> <a href="#">Belgravia</a></li>
+                                        <li><a href="#">Clifden</a></li>
+                                        <li> <a href="#">Dawson</a></li>
+                                        <li><a href="#">Dawson Bedroom</a></li>
+    
+                                    </ul>
+                                    <ul class="column">
+    
+                                        <li> <a href="#">Ellesmere</a></li>
+                                        <li> <a href="#">Ferro</a></li>
+                                        <li><a href="#">Florence</a></li>
+                                        <li> <a href="#">Georgia</a></li>
+                                        <li> <a href="#">Harborne</a></li>
+                                        <li><a href="#">Jacobsen</a></li>
+                                    </ul>
+                                    <ul class="column">
+    
+                                        <li><a href="#">Kelso</a></li>
+                                        <li> <a href="#">Kensington</a></li>
+                                        <li> <a href="#">Kensington Bedroom</a></li>
+                                        <li><a href="#">Madison</a></li>
+                                        <li><a href="#">Rezana</a></li>
+                                        <li><a href="#">Strada Gloss</a></li>
+                                        <li><a href="#">Starda Matte</a></li>
+    
+                                    </ul>
+                                    <ul class="column">
+                                        <li><a href="#">Tavola</a></li>
+                                        <li><a href="#">Wakefield</a></li>
+                                        <li><a href="#">Winslow</a></li>
+                                        <li><a href="#">Zola Gloss</a></li>
+                                        <li><a href="#">Zola Matte</a></li>
+                                        <li><a href="#">Zola Soft-Mattte Bedroom</a></li>
+    
+                                    </ul>
+                                </div>
+                            </div>
+                    </li>
+                    <li class="navbar">
+    
+                        <div class="dropdown">
+                            <button class="dropbtn">Handles
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+    
+                                <div class="row mx-24">
+                                    <ul class="column">
+    
+                                        <li> <a href="#">Gola</a></li>
+    
+    
+    
+                                    </ul>
+                                    <ul class="column">
+                                        <li> <a href="#">Handles</a></li>
+    
+                                    </ul>
+    
+    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="navbar">
+    
+                        <div class="dropdown">
+                            <button class="dropbtn">Storages & Bins
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+    
+                                <div class="row">
+                                    <ul class="column">
+                                        <li> <a href="#">Base Pull-Outs</a></li>
+    
+                                       
+    
+    
+                                    </ul>
+                                    <ul class="column">
+                                        <li><a href="#">Corner Pull-Outs</a></li>
+    
+                                        
+    
+    
+                                    </ul>
+                                    <ul class="column">
+                                      <li><a href="#">Pull-Out Bins</a></li>
+                                        
+    
+    
+                                    </ul>
+                                    <ul class="column">
+                                        <li><a href="#">Tail Larder Pull-Outs</a></li>
+                                        
+    
+    
+    
+                                    </ul>
+    
+    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="navbar">
+    
+                        <div class="dropdown">
+                            <button class="dropbtn">Lightning
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+    
+                                <div class="row">
+                                    <ul class="column">
+                                        <li><a href="#">Converters & Accessories</a></li>
+                                        <li><a href="#">Flexible linear</a></li>
+                                    </ul>
+                                    <ul class="column">
+                                        <li><a href="#">Lightings Profiles</a></li>
+                                        
+                                        <a href="#">Switch $ Sensor</a>
+    
+                                    </ul>
+                                    <ul class="column">
+                                        <li><a href="#">Under Cabinet</a></li>
+                                    </ul>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="navbar">
+    
+                        <div class="dropdown">
+                            <button class="dropbtn">Universal Accessories
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+    
+                                <div class="row ">
+                                    <ul class="column">
+                                        <li><a href="#">Bench Slats</a></li>
+                                        <li><a href="#">Circular Timber Tops</a></li>
+                                        <li> <a href="#">Plate & Wine Racks</a></li>
+                                        
+                                        
+                                       
+                                    </ul>
+                                    <ul class="column">
+                                       
+                                       
+                                       
+                                        <li> <a href="#">Brackets</a></li>
+                                        <li> <a href="#">Inframe Hinges & Fittings</a></li>
+                                        <li> <a href="#">Spice Drawer & Tray set </a></li>
+                                     
+                                    </ul>
+                                    <ul class="column">
+                                        <li><a href="#">Chopping board set</a></li>
+                                        <li><a href="#">Pantry Spice Rack</a></li>
+                                        <li><a href="#">Wicker Baskets</a></li>
+    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+    
+                </ul>
+    
             </div>
-
-            <ul class="bg-[#808080] relative hidden  lg:flex text-white justify-around ">
-                <li class="navbar">
-
-                    <div class="dropdown">
-                        <button class="dropbtn">Doors & Accessories
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-
-                            <div class="row ">
-                                <div class="column">
-
-                                    <a href="#">Aldana</a>
-                                    <a href="#">Aldana Bedroom</a>
-                                    <a href="#">Arrinton</a>
-                                    <a href="#">Belgravia</a>
-                                    <a href="#">Clifden</a>
-                                    <a href="#">Dawson</a>
-                                    <a href="#">Dawson Bedroom</a>
-
-
-
-                                </div>
-                                <div class="column">
-
-                                    <a href="#">Ellesmere</a>
-                                    <a href="#">Ferro</a>
-                                    <a href="#">Florence</a>
-                                    <a href="#">Georgia</a>
-                                    <a href="#">Harborne</a>
-                                    <a href="#">Jacobsen</a>
-
-                                </div>
-                                <div class="column">
-
-                                    <a href="#">Kelso</a>
-                                    <a href="#">Kensington</a>
-                                    <a href="#">Kensington Bedroom</a>
-                                    <a href="#">Madison</a>
-                                    <a href="#">Rezana</a>
-                                    <a href="#">Strada Gloss</a>
-                                    <a href="#">Starda Matte</a>
-
-
-                                </div>
-                                <div class="column">
-
-                                    <a href="#">Tavola</a>
-                                    <a href="#">Wakefield</a>
-                                    <a href="#">Winslow</a>
-                                    <a href="#">Zola Gloss</a>
-                                    <a href="#">Zola Matte</a>
-                                    <a href="#">Zola Soft-Mattte Bedroom</a>
-
-
-
-
-
-                                </div>
-                            </div>
-                        </div>
-                </li>
-                <li class="navbar">
-
-                    <div class="dropdown">
-                        <button class="dropbtn">Handles
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-
-                            <div class="row mx-24">
-                                <div class="column">
-
-                                    <a href="#">Gola</a>
-
-
-
-                                </div>
-                                <div class="column">
-
-                                    <a href="#">Handles</a>
-
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="navbar">
-
-                    <div class="dropdown">
-                        <button class="dropbtn">Storages & Bins
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-
-                            <div class="row">
-                                <div class="column">
-
-                                    <a href="#">Base Pull-Outs</a>
-
-
-                                </div>
-                                <div class="column">
-
-                                    <a href="#">Corner Pull-Outs</a>
-
-
-                                </div>
-                                <div class="column">
-
-                                    <a href="#">Pull-Out Bins</a>
-
-
-                                </div>
-                                <div class="column">
-
-                                    <a href="#">Tail Larder Pull-Outs</a>
-
-
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="navbar">
-
-                    <div class="dropdown">
-                        <button class="dropbtn">Lightning
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-
-                            <div class="row">
-                                <div class="column">
-
-                                    <a href="#">Converters & Accessories</a>
-                                    <a href="#">Flexible linear</a>
-
-
-
-                                </div>
-                                <div class="column">
-
-                                    <a href="#">Lightings Profiles</a>
-                                    <a href="#">Switch $ Sensor</a>
-
-                                </div>
-                                <div class="column">
-
-                                    <a href="#">Under Cabinet</a>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="navbar">
-
-                    <div class="dropdown">
-                        <button class="dropbtn">Universal Accessories
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-
-                            <div class="row ">
-                                <div class="column">
-
-                                    <a href="#">Bench Slats</a>
-                                    <a href="#">Circular Timber Tops</a>
-                                    <a href="#">Plate & Wine Racks</a>
-                                </div>
-                                <div class="column">
-
-                                    <a href="#">Brackets</a>
-                                    <a href="#">Inframe Hinges & Fittings</a>
-                                    <a href="#">Spice Drawer & Tray set </a>
-                                </div>
-                                <div class="column">
-
-                                    <a href="#">Chopping board set</a>
-                                    <a href="#">Pantry Spice Rack</a>
-                                    <a href="#">Wicker Baskets</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-            </ul>
-
-        </div>
-    </nav>
+        </nav>
     <main>
 
         <section
