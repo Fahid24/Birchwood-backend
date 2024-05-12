@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
-<body class="">
+<body class="poppins-regular">
     <!-- 
         ---------------
         header / navBar  
@@ -969,51 +971,75 @@
            footer section
         --------------------
         -->
-    <footer>
-        <div class="grid lg:flex justify-around text-xl text-gray-600  ">
-            <ul class="pt-8">
-                <li class="py-2">Why Uform?</li>
-                <li>Doors</li>
-                <li class="py-2">Lighting</li>
-                <li>Handles</li>
-                <li class="py-2">Furniture</li>
-            </ul>
-
-            <ul class="pt-8">
-                <li class="py-2">Design</li>
-                <li>Help & Support</li>
-                <li class="py-2">News</li>
-                <li>Contact</li>
-
-            </ul>
-            <ul class="pt-8 -z-10">
-                <li class="py-2">Stay Connected</li>
-                <div class="grid grid-cols-2 mt-2 gap-3 ">
-                    <li class="flex gap-3 items-center "><ion-icon style="border-radius: 100%;"
-                            class="bg-[#CAC3B1] p-2  text-white text-3xl" name="logo-facebook"></ion-icon> Facebook</li>
-                    <li class="flex gap-3 items-center "><ion-icon style="border-radius: 100%;"
-                            class="bg-[#CAC3B1] p-2  text-white text-3xl" name="logo-instagram"></ion-icon> Instagram
-                    </li>
-                    <li class="flex gap-3 items-center "><ion-icon style="border-radius: 100%;"
-                            class="bg-[#CAC3B1] p-2  text-white text-3xl" name="logo-youtube"></ion-icon>Youtube</li>
-                    <li class="flex gap-3 items-center "><ion-icon style="border-radius: 100%;"
-                            class="bg-[#CAC3B1] p-2  text-white text-3xl" name="logo-instagram"></ion-icon>Linkedin</li>
-                    <li class="flex gap-3 items-center "><ion-icon style="border-radius: 100%;"
-                            class="bg-[#CAC3B1] p-2  text-white text-3xl" name="logo-google"></ion-icon>Google </li>
+        <footer class="mx-12">
+            <div class="grid lg:flex justify-around  text- text-gray-600  ">
+                <ul class="pt-8">
+                    <li class="py-2">Why Uform?</li>
+                    <li>Doors</li>
+                    <li class="py-2">Lighting</li>
+                    <li>Handles</li>
+                    <li class="py-2">Furniture</li>
+                </ul>
+    
+                <ul class="pt-8">
+                    <li class="py-2">Design</li>
+                    <li>Help & Support</li>
+                    <li class="py-2">News</li>
+                    <li>Contact</li>
+    
+                </ul>
+                <ul class="pt-8 -z-10">
+                    <li class="py-2">Stay Connected</li>
+                    <div class="grid grid-cols-2 mt-2 gap-3 ">
+                        <li class="flex gap-3 items-center "><ion-icon style="border-radius: 100%;"
+                                class="bg-[#CAC3B1] p-2  text-white text-3xl" name="logo-facebook"></ion-icon> Facebook</li>
+                        <li class="flex gap-3 items-center "><ion-icon style="border-radius: 100%;"
+                                class="bg-[#CAC3B1] p-2  text-white text-3xl" name="logo-instagram"></ion-icon> Instagram
+                        </li>
+                        <li class="flex gap-3 items-center "><ion-icon style="border-radius: 100%;"
+                                class="bg-[#CAC3B1] p-2  text-white text-3xl" name="logo-youtube"></ion-icon>Youtube</li>
+                        <li class="flex gap-3 items-center "><ion-icon style="border-radius: 100%;"
+                                class="bg-[#CAC3B1] p-2  text-white text-3xl" name="logo-instagram"></ion-icon>Linkedin</li>
+                        <li class="flex gap-3 items-center "><ion-icon style="border-radius: 100%;"
+                                class="bg-[#CAC3B1] p-2  text-white text-3xl" name="logo-google"></ion-icon>Google </li>
+                    </div>
+                </ul>
+                <img class="max-w-[250px] hidden lg:inline " src="./assets/images/footer-image.png" alt="">
+            </div>
+            <div class="grid py-10 lg:py-0 gap-4 lg:flex lg:items-center lg:gap-20 px-6 lg:px-12">
+                <img class="max-w-[110px] "
+                    src="./assets/images/WhatsApp_Image_2024-05-06_at_6.45.21_PM-removebg-preview.png" alt="">
+                <p>2024 Uform |
+                    Terms & Conditions |
+                    Privacy Policy |
+                    Cookie Policy |
+                    Report a bug</p>
+            </div>
+        </footer>
+        <div class=" bottom-0  right-0 
+    bg-[#808080]  text-white px-2 py-3 w-full ">
+     
+    
+            <div class="grid lg:flex justify-items-center gap-6 items-center justify-between">
+                <p class="text-sm pl-2 lg:pl-6">
+                    Cookies to helps us customise your experience,if you are OK with this,please confirm or if you want to
+                    find out more and change your setting.<br>
+                    <span>cookie setting.</span>
+                </p>
+                <div>
+                    <button class="border text-white text-sm px-8 py-1 rounded-none
+                mr-4 transition-colors 
+                focus:outline-none" >
+                        Cookie Policy
+                    </button>
+                    <button class="border bg-[#6a7357]  text-white text-sm px-8 py-1 rounded-none
+                transition-colors 
+                focus:outline-none">
+                        confirm
+                    </button>
                 </div>
-            </ul>
-            <img class="max-w-[250px] hidden lg:inline " src="./assets/images/footer-image.png" alt="">
+            </div>
         </div>
-        <div class="grid py-10 lg:py-0 gap-4 lg:flex lg:items-center lg:gap-20 px-6 lg:px-12">
-            <img class="max-w-[110px] "
-                src="./assets/images/WhatsApp_Image_2024-05-06_at_6.45.21_PM-removebg-preview.png" alt="">
-            <p>2024 Uform |
-                Terms & Conditions |
-                Privacy Policy |
-                Cookie Policy |
-                Report a bug</p>
-        </div>
-    </footer>
     <script src="./script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

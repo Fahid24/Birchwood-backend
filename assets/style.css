@@ -1,3 +1,18 @@
+@font-face {
+	font-family:"FS-Elliot" ;
+	src: url("./FS\ Elliot\ ProRegular.otf") format("OpenType");
+	
+}
+
+
+.poppins-regular {
+	font-family: "FS-Elliot",sans-serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+
+
+
 .h{
     transform: translateX(100%);
     opacity: 0;
