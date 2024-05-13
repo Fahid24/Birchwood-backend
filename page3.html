@@ -495,7 +495,7 @@
         <!-- sub navbar -->
         <section
             class="lg:ml-12 lg:mr-12  lg:grid lg:ml-24 lg:mr-24 px-4 lg:px-0   mt-[10px] mb-[10px] lg:mb-[0px] lg:mt-[20px]">
-            <div class="flex justify-between font-semibold">
+            <div class="lg:flex justify-between font-semibold">
                 <ul class="hidden lg:flex justify-start text-white py-16 px-4 gap-8 bg-[#9A9E81]">
                     <li class="self-start -mt-12">
                         <h4>Summary</h4>
@@ -516,20 +516,20 @@
                     </li>
                 </ul>
 
-
-            </div>
-            <div class="lg:grid ">
-                <div class="grid  justify-self-end lg:inline">
-                    <p class="bg-[#6a7357] w-full flex items-center gap-4 lg:hidden p-2 text-white font-semibold"><span
-                            class="bg-white text-[#6a7357] text-md font-bold px-2 py-1">3</span> Payment</p>
-                    <hr>
-                    <a
-                        class=" flex items-center justify-between -z-10 p-3 gap-2  right-24 rounded-none border-none text-white  lg:items-center bg-[#6A7357] ">
-                        Continue
-                        <ion-icon class="p-1  text-black text-xl bg-white" name="chevron-forward-sharp"></ion-icon>
-                    </a>
+                <div class="lg:grid justify-self-end">
+                    <div class="grid   lg:inline">
+                        <p class="bg-[#6a7357] w-full flex items-center gap-4 lg:hidden p-2 text-white font-semibold"><span
+                                class="bg-white text-[#6a7357] text-md font-bold px-2 py-1">1</span> Summary</p>
+                        <hr>
+                        <a
+                            class=" flex items-center justify-between -z-10 p-3 gap-2  right-24 rounded-none border-none text-white  lg:items-center bg-[#6A7357] ">
+                           Proceed to Checkout
+                            <ion-icon class="p-1  text-black text-xl bg-white" name="chevron-forward-sharp"></ion-icon>
+                        </a>
+                    </div>
                 </div>
             </div>
+            
         </section>
         <!-- table start -->
 
@@ -540,430 +540,47 @@
                     <table class="table-fixed lg:mx-auto ">
                         <thead>
                             <tr class="bg-[#808080] ">
-                                <th class="p-2 text-white">Product</th>
+                                <th class="p-2 text-white border-r-8 border-white">Product</th>
+                                <th class="p-2  text-white border-r-8 border-white">Description</th>
+                                <th class="p-2  text-white border-r-8 border-white">Colour/finish</th>
+                                <th class="p-2 text-white border-r-8 border-white">Quantity</th>
+                                <th class="p-2  text-sm text-white border-r-8 border-white">Nett price each</th>
+                                <th class="p-2 text-sm text-white">Nett Price total</th>
+
 
                             </tr>
                         </thead>
                         <tbody>
 
+                            <tr class="">
+                                <td class="border-r-8 border-white  py-2   underline bg-gray-200">SMPT-140597</td>
+                                <td class="border-r-8 border-white py-2    bg-gray-200">140x597 drawer front</td>
+                                <td class="border-r-8 border-white py-2    bg-gray-200">Indigo-Paint to order</td>
+                                <td class="border-r-8 border-white py-2 bg-gray-200 ">
+                                    <div class="max-w-sm  mx-auto rounded-md ">
+                                        <div class="flex justify-center items-center">
+                                            <button id="decrementBtn"
+                                                class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
+                                            <input type="number" class="w-6 h-6 border-2 border-black text-center">
+                                            <button id="incrementBtn"
+                                                class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
+                                        </div>
 
-                            <tr>
-                                <td class="border px-2 py-2   underline bg-gray-200">SMPT-140597</td>
+                                    </div>
+                                </td>
+                                <td class="border-r-8 border-white py-2    bg-gray-200">£43.62</td>
+                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
+                                        name="add-outline"></ion-icon></td>
 
-                            </tr>
-
-                            <tr>
-                                <td class="border px-2 py-2   underline bg-gray-100">SMPT-715397</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-2 py-2  underline bg-gray-200">SMPT-715497</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2   underline bg-gray-100">SMPT-283597</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2   underline bg-gray-200">SMPT-18MM900650PANEL</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2   underline bg-gray-100">SMPT-18MM960360PANEL</td>
 
                             </tr>
                             <tr>
-                                <td class="border px-2 py-2   underline bg-gray-200">SMPT-18MM9001200PAN</td>
+                                <td class="border-r-8 border-white py-2   underline bg-gray-100">SMPT-715397</td>
 
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2   underline bg-gray-100">SMPT-PLINTH</td>
 
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2   underline bg-gray-200">INBN-3003351EPLAVA</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2   underline bg-gray-100">GOPT-TCAPS</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2 underline bg-gray-200">SMPT-TOPINTCR90</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2   underline bg-gray-100">GOPT-TCAPS</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2 underline bg-gray-200">SMPT-TOPINTCR90</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2   underline bg-gray-100">GOPT-TCAPS</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2 underline bg-gray-200">SMPT-TOPINTCR90</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2   underline bg-gray-100">GOPT-TCAPS</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2 underline bg-gray-200">SMPT-TOPINTCR90</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2   underline bg-gray-100">GOPT-TCAPS</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2 underline bg-gray-200">SMPT-TOPINTCR90</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2   underline bg-gray-100">GOPT-TCAPS</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2 underline bg-gray-200">SMPT-TOPINTCR90</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2   underline bg-gray-100">GOPT-TCAPS</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2 underline bg-gray-200">SMPT-TOPINTCR90</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2   underline bg-gray-100">GOPT-TCAPS</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2 underline bg-gray-200">SMPT-TOPINTCR90</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2   underline bg-gray-100">GOPT-TCAPS</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2 underline bg-gray-200">SMPT-TOPINTCR90</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2   underline bg-gray-100">GOPT-TCAPS</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2 underline bg-gray-200">SMPT-TOPINTCR90</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2   underline bg-gray-100">GOPT-TCAPS</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2 underline bg-gray-200">SMPT-TOPINTCR90</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2   underline bg-gray-100">GOPT-TCAPS</td>
-
-                            </tr>
-
-
-                        </tbody>
-                    </table>
-                </div>
-                <!-- product end -->
-                <!-- description start -->
-                <div class="hidden lg:inline">
-                    <table class="table-fixed mx-auto">
-                        <thead>
-                            <tr class="bg-[#808080]">
-                                <th class="p-2  text-white">Description</th>
-                        </thead>
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-200 ">140x597 drawer front</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-100">715 x 397</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-200">715 x 497</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2   bg-gray-100">283 x 597 pan drawer</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-200 ">plain plan: 900x650x18</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-100">plain plan: 900x360x18</td>
-
-                        </tr>
-
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-200">plain plan: 900x1200x18</td>
-
-                        </tr>
-
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-100">plinth:3000x150x16</td>
-
-                        </tr>
-
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-200">vs envi@ SpaceXX Pro for 300mm cabinet, 1x32 321
-                                bin + 1.2lL box</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-100">base unit set to alumininum caps for top
-                                rail:56.5x27.5x2</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-200">base unit set to alumininum internal corner
-                                connect for top rail:56.5x28.3x28.3 1.2l</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-100">vs envi@ SpaceXX Pro for 300mm cabinet, 1x32 321
-                                bin + 1.2lL box</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-200">base unit set to alumininum internal corner
-                                connect for top rail:56.5x28.3x28.3 1.2l</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-100">vs envi@ SpaceXX Pro for 300mm cabinet, 1x32 321
-                                bin + 1.2lL box</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-200">base unit set to alumininum internal corner
-                                connect for top rail:56.5x28.3x28.3 1.2l</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-100">vs envi@ SpaceXX Pro for 300mm cabinet, 1x32 321
-                                bin + 1.2lL box</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-200">base unit set to alumininum internal corner
-                                connect for top rail:56.5x28.3x28.3 1.2l</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-100">vs envi@ SpaceXX Pro for 300mm cabinet, 1x32 321
-                                bin + 1.2lL box</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-200">base unit set to alumininum internal corner
-                                connect for top rail:56.5x28.3x28.3 1.2l</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-100">vs envi@ SpaceXX Pro for 300mm cabinet, 1x32 321
-                                bin + 1.2lL box</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-200">base unit set to alumininum internal corner
-                                connect for top rail:56.5x28.3x28.3 1.2l</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-100">vs envi@ SpaceXX Pro for 300mm cabinet, 1x32 321
-                                bin + 1.2lL box</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-200">base unit set to alumininum internal corner
-                                connect for top rail:56.5x28.3x28.3 1.2l</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-100">vs envi@ SpaceXX Pro for 300mm cabinet, 1x32 321
-                                bin + 1.2lL box</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-200">base unit set to alumininum internal corner
-                                connect for top rail:56.5x28.3x28.3 1.2l</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-100">vs envi@ SpaceXX Pro for 300mm cabinet, 1x32 321
-                                bin + 1.2lL box</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-200">base unit set to alumininum internal corner
-                                connect for top rail:56.5x28.3x28.3 1.2l</td>
-
-                        </tr>
-                        <tr>
-                            <td class="border px-2 py-2  bg-gray-100">vs envi@ SpaceXX Pro for 300mm cabinet, 1x32 321
-                                bin + 1.2lL box</td>
-
-                        </tr>
-
-
-
-
-                        </tbody>
-                    </table>
-                </div>
-                <!-- description end -->
-                <!-- colour start  -->
-                <div class="hidden lg:inline">
-                    <table class="table-fixed">
-                        <thead>
-                            <tr class="bg-[#808080]">
-                                <th class="p-2  text-white">Colour/finish</th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-
-
-                            <tr>
-                                <td class="border px-2 py-2  bg-gray-200 ">Indigo-Paint to order</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-2 py-2   bg-gray-100">Indigo-Paint to order</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-2 py-2  bg-gray-200">Indigo-Paint to order</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2  bg-gray-100">Indigo-Paint to order</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2  bg-gray-200">Indigo-Paint to order</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2  bg-gray-100">Indigo-Paint to order</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2  bg-gray-200">Indigo-Paint to order</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2  bg-gray-100">Indigo-Paint to order</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-2 py-2  bg-gray-100">Indigo-Paint to order</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2  bg-gray-100">Indigo-Paint to order</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-2 py-2  bg-gray-100">Indigo-Paint to order</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2  bg-gray-100">Indigo-Paint to order</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-2 py-2  bg-gray-100">Indigo-Paint to order</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2  bg-gray-100">Indigo-Paint to order</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-2 py-2  bg-gray-100">Indigo-Paint to order</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2  bg-gray-100">Indigo-Paint to order</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-2 py-2  bg-gray-100">Indigo-Paint to order</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2  bg-gray-100">Indigo-Paint to order</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-2 py-2  bg-gray-100">Indigo-Paint to order</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-2  bg-gray-100">Indigo-Paint to order</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-2 py-2  bg-gray-100">Indigo-Paint to order</td>
-
-                            </tr>
-
-
-
-
-
-
-
-                        </tbody>
-                    </table>
-                </div>
-                <!-- color/finish end -->
-                <!-- quantity start-->
-                <div class="hidden lg:inline">
-                    <table class="table-fixed mx-auto">
-                        <thead class="">
-                            <tr class="bg-[#808080] mx-10 text-white">
-                                <th class="p-2">Quantity</th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200 ">
+                                <td class="border-r-8 border-white py-2    bg-gray-100">140x597 drawer front</td>
+                                <td class="border-r-8 border-white py-2    bg-gray-100">Indigo-Paint to order</td>
+                                <td class="border-r-8 border-white py-2 bg-gray-100 ">
                                     <div class="max-w-sm mx-auto rounded-md ">
                                         <div class="flex justify-center items-center">
                                             <button id="decrementBtn"
@@ -975,13 +592,16 @@
 
                                     </div>
                                 </td>
-
+                                <td class="border-r-8 border-white py-2    bg-gray-100">£43.62</td>
+                                <td class=" py-2 col-span-2 bg-gray-100"><ion-icon name="add-outline"></ion-icon></td>
                             </tr>
 
                             <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-100">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
-
+                                <td class="border-r-8 border-white py-2  underline bg-gray-200">SMPT-715497</td>
+                                <td class="border-r-8 border-white py-2    bg-gray-200">140x597 drawer front</td>
+                                <td class="border-r-8 border-white py-2    bg-gray-200">Indigo-Paint to order</td>
+                                <td class="border-r-8 border-white py-2 bg-gray-200 ">
+                                    <div class="max-w-sm mx-auto rounded-md ">
                                         <div class="flex justify-center items-center">
                                             <button id="decrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
@@ -989,15 +609,20 @@
                                             <button id="incrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
                                         </div>
+
                                     </div>
                                 </td>
-
+                                <td class="border-r-8 border-white py-2    bg-gray-200">£43.62</td>
+                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
+                                        name="add-outline"></ion-icon></td>
                             </tr>
 
                             <tr>
-                                <td class="border px-4 py-2 bg-gray-200">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
-
+                                <td class="border-r-8 border-white py-2   underline bg-gray-100">SMPT-283597</td>
+                                <td class="border-r-8 border-white py-2    bg-gray-100">140x597 drawer front</td>
+                                <td class="border-r-8 border-white py-2    bg-gray-100">Indigo-Paint to order</td>
+                                <td class="border-r-8 border-white py-2 bg-gray-100 ">
+                                    <div class="max-w-sm mx-auto rounded-md ">
                                         <div class="flex justify-center items-center">
                                             <button id="decrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
@@ -1005,15 +630,20 @@
                                             <button id="incrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
                                         </div>
+
                                     </div>
                                 </td>
-
+                                <td class="border-r-8 border-white py-2    bg-gray-100">£43.62</td>
+                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
+                                        name="add-outline"></ion-icon></td>
                             </tr>
-
                             <tr>
-                                <td class="border px-4 py-2 bg-gray-100">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
-
+                                <td class="border-r-8 border-white py-2   underline bg-gray-200">SMPT-18MM900650PANEL
+                                </td>
+                                <td class="border-r-8 border-white py-2    bg-gray-200">140x597 drawer front</td>
+                                <td class="border-r-8 border-white py-2    bg-gray-200">Indigo-Paint to order</td>
+                                <td class="border-r-8 border-white py-2 bg-gray-200 ">
+                                    <div class="max-w-sm mx-auto rounded-md ">
                                         <div class="flex justify-center items-center">
                                             <button id="decrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
@@ -1021,14 +651,21 @@
                                             <button id="incrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
                                         </div>
+
                                     </div>
                                 </td>
-
+                                <td class="border-r-8 border-white py-2    bg-gray-200">£43.62</td>
+                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
+                                        name="add-outline"></ion-icon></td>
                             </tr>
                             <tr>
-                                <td class="border px-4 py-2 bg-gray-200">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
+                                <td class="border-r-8 border-white py-2   underline bg-gray-100">SMPT-18MM960360PANEL
+                                </td>
 
+                                <td class="border-r-8 border-white py-2    bg-gray-100">140x597 drawer front</td>
+                                <td class="border-r-8 border-white py-2    bg-gray-100">Indigo-Paint to order</td>
+                                <td class="border-r-8 border-white py-2 bg-gray-100 ">
+                                    <div class="max-w-sm mx-auto rounded-md ">
                                         <div class="flex justify-center items-center">
                                             <button id="decrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
@@ -1036,14 +673,21 @@
                                             <button id="incrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
                                         </div>
+
                                     </div>
                                 </td>
-
+                                <td class="border-r-8 border-white py-2    bg-gray-100">£43.62</td>
+                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
+                                        name="add-outline"></ion-icon></td>
                             </tr>
                             <tr>
-                                <td class="border px-4 py-2 bg-gray-100">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
+                                <td class="border-r-8 border-white py-2   underline bg-gray-200">SMPT-18MM960360PANEL
+                                </td>
 
+                                <td class="border-r-8 border-white py-2    bg-gray-200">140x597 drawer front</td>
+                                <td class="border-r-8 border-white py-2    bg-gray-200">Indigo-Paint to order</td>
+                                <td class="border-r-8 border-white py-2 bg-gray-200 ">
+                                    <div class="max-w-sm mx-auto rounded-md ">
                                         <div class="flex justify-center items-center">
                                             <button id="decrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
@@ -1051,14 +695,21 @@
                                             <button id="incrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
                                         </div>
+
                                     </div>
                                 </td>
-
+                                <td class="border-r-8 border-white py-2    bg-gray-200">£43.62</td>
+                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
+                                        name="add-outline"></ion-icon></td>
                             </tr>
                             <tr>
-                                <td class="border px-4 py-2 bg-gray-200">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
+                                <td class="border-r-8 border-white py-2   underline bg-gray-100">SMPT-18MM960360PANEL
+                                </td>
 
+                                <td class="border-r-8 border-white py-2    bg-gray-100">140x597 drawer front</td>
+                                <td class="border-r-8 border-white py-2    bg-gray-100">Indigo-Paint to order</td>
+                                <td class="border-r-8 border-white py-2 bg-gray-100 ">
+                                    <div class="max-w-sm mx-auto rounded-md ">
                                         <div class="flex justify-center items-center">
                                             <button id="decrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
@@ -1066,14 +717,21 @@
                                             <button id="incrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
                                         </div>
+
                                     </div>
                                 </td>
-
+                                <td class="border-r-8 border-white py-2    bg-gray-100">£43.62</td>
+                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
+                                        name="add-outline"></ion-icon></td>
                             </tr>
                             <tr>
-                                <td class="border px-4 py-2 bg-gray-100">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
+                                <td class="border-r-8 border-white py-2   underline bg-gray-200">SMPT-18MM960360PANEL
+                                </td>
 
+                                <td class="border-r-8 border-white py-2    bg-gray-200">140x597 drawer front</td>
+                                <td class="border-r-8 border-white py-2    bg-gray-200">Indigo-Paint to order</td>
+                                <td class="border-r-8 border-white py-2 bg-gray-200 ">
+                                    <div class="max-w-sm mx-auto rounded-md ">
                                         <div class="flex justify-center items-center">
                                             <button id="decrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
@@ -1081,14 +739,21 @@
                                             <button id="incrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
                                         </div>
+
                                     </div>
                                 </td>
-
+                                <td class="border-r-8 border-white py-2    bg-gray-200">£43.62</td>
+                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
+                                        name="add-outline"></ion-icon></td>
                             </tr>
                             <tr>
-                                <td class="border px-4 py-2 bg-gray-200">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
+                                <td class="border-r-8 border-white py-2   underline bg-gray-100">SMPT-18MM960360PANEL
+                                </td>
 
+                                <td class="border-r-8 border-white py-2    bg-gray-100">140x597 drawer front</td>
+                                <td class="border-r-8 border-white py-2    bg-gray-100">Indigo-Paint to order</td>
+                                <td class="border-r-8 border-white py-2 bg-gray-100 ">
+                                    <div class="max-w-sm mx-auto rounded-md ">
                                         <div class="flex justify-center items-center">
                                             <button id="decrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
@@ -1096,14 +761,21 @@
                                             <button id="incrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
                                         </div>
+
                                     </div>
                                 </td>
-
+                                <td class="border-r-8 border-white py-2    bg-gray-100">£43.62</td>
+                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
+                                        name="add-outline"></ion-icon></td>
                             </tr>
                             <tr>
-                                <td class="border px-4 py-2 bg-gray-100">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
+                                <td class="border-r-8 border-white py-2   underline bg-gray-200">SMPT-18MM960360PANEL
+                                </td>
 
+                                <td class="border-r-8 border-white py-2    bg-gray-200">140x597 drawer front</td>
+                                <td class="border-r-8 border-white py-2    bg-gray-200">Indigo-Paint to order</td>
+                                <td class="border-r-8 border-white py-2 bg-gray-200 ">
+                                    <div class="max-w-sm mx-auto rounded-md ">
                                         <div class="flex justify-center items-center">
                                             <button id="decrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
@@ -1111,14 +783,21 @@
                                             <button id="incrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
                                         </div>
+
                                     </div>
                                 </td>
-
+                                <td class="border-r-8 border-white py-2    bg-gray-200">£43.62</td>
+                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
+                                        name="add-outline"></ion-icon></td>
                             </tr>
                             <tr>
-                                <td class="border px-4 py-2 bg-gray-200">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
+                                <td class="border-r-8 border-white py-2   underline bg-gray-100">SMPT-18MM960360PANEL
+                                </td>
 
+                                <td class="border-r-8 border-white py-2    bg-gray-100">140x597 drawer front</td>
+                                <td class="border-r-8 border-white py-2    bg-gray-100">Indigo-Paint to order</td>
+                                <td class="border-r-8 border-white py-2 bg-gray-100 ">
+                                    <div class="max-w-sm mx-auto rounded-md ">
                                         <div class="flex justify-center items-center">
                                             <button id="decrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
@@ -1126,14 +805,21 @@
                                             <button id="incrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
                                         </div>
+
                                     </div>
                                 </td>
-
+                                <td class="border-r-8 border-white py-2    bg-gray-100">£43.62</td>
+                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
+                                        name="add-outline"></ion-icon></td>
                             </tr>
                             <tr>
-                                <td class="border px-4 py-2 bg-gray-100">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
+                                <td class="border-r-8 border-white py-2   underline bg-gray-200">SMPT-18MM960360PANEL
+                                </td>
 
+                                <td class="border-r-8 border-white py-2    bg-gray-200">140x597 drawer front</td>
+                                <td class="border-r-8 border-white py-2    bg-gray-200">Indigo-Paint to order</td>
+                                <td class="border-r-8 border-white py-2 bg-gray-200 ">
+                                    <div class="max-w-sm mx-auto rounded-md ">
                                         <div class="flex justify-center items-center">
                                             <button id="decrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
@@ -1141,14 +827,21 @@
                                             <button id="incrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
                                         </div>
+
                                     </div>
                                 </td>
-
+                                <td class="border-r-8 border-white py-2    bg-gray-200">£43.62</td>
+                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
+                                        name="add-outline"></ion-icon></td>
                             </tr>
                             <tr>
-                                <td class="border px-4 py-2 bg-gray-200">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
+                                <td class="border-r-8 border-white py-2   underline bg-gray-100">SMPT-18MM960360PANEL
+                                </td>
 
+                                <td class="border-r-8 border-white py-2    bg-gray-100">140x597 drawer front</td>
+                                <td class="border-r-8 border-white py-2    bg-gray-100">Indigo-Paint to order</td>
+                                <td class="border-r-8 border-white py-2 bg-gray-100 ">
+                                    <div class="max-w-sm mx-auto rounded-md ">
                                         <div class="flex justify-center items-center">
                                             <button id="decrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
@@ -1156,14 +849,21 @@
                                             <button id="incrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
                                         </div>
+
                                     </div>
                                 </td>
-
+                                <td class="border-r-8 border-white py-2    bg-gray-100">£43.62</td>
+                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
+                                        name="add-outline"></ion-icon></td>
                             </tr>
                             <tr>
-                                <td class="border px-4 py-2 bg-gray-100">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
+                                <td class="border-r-8 border-white py-2   underline bg-gray-200">SMPT-18MM960360PANEL
+                                </td>
 
+                                <td class="border-r-8 border-white py-2    bg-gray-200">140x597 drawer front</td>
+                                <td class="border-r-8 border-white py-2    bg-gray-200">Indigo-Paint to order</td>
+                                <td class="border-r-8 border-white py-2 bg-gray-200 ">
+                                    <div class="max-w-sm mx-auto rounded-md ">
                                         <div class="flex justify-center items-center">
                                             <button id="decrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
@@ -1171,14 +871,21 @@
                                             <button id="incrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
                                         </div>
+
                                     </div>
                                 </td>
-
+                                <td class="border-r-8 border-white py-2    bg-gray-200">£43.62</td>
+                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
+                                        name="add-outline"></ion-icon></td>
                             </tr>
                             <tr>
-                                <td class="border px-4 py-2 bg-gray-200">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
+                                <td class="border-r-8 border-white py-2   underline bg-gray-100">SMPT-18MM960360PANEL
+                                </td>
 
+                                <td class="border-r-8 border-white py-2    bg-gray-100">140x597 drawer front</td>
+                                <td class="border-r-8 border-white py-2    bg-gray-100">Indigo-Paint to order</td>
+                                <td class="border-r-8 border-white py-2 bg-gray-100 ">
+                                    <div class="max-w-sm mx-auto rounded-md ">
                                         <div class="flex justify-center items-center">
                                             <button id="decrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
@@ -1186,14 +893,21 @@
                                             <button id="incrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
                                         </div>
+
                                     </div>
                                 </td>
-
+                                <td class="border-r-8 border-white py-2    bg-gray-100">£43.62</td>
+                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
+                                        name="add-outline"></ion-icon></td>
                             </tr>
                             <tr>
-                                <td class="border px-4 py-2 bg-gray-100">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
+                                <td class="border-r-8 border-white py-2   underline bg-gray-200">SMPT-18MM960360PANEL
+                                </td>
 
+                                <td class="border-r-8 border-white py-2    bg-gray-200">140x597 drawer front</td>
+                                <td class="border-r-8 border-white py-2    bg-gray-200">Indigo-Paint to order</td>
+                                <td class="border-r-8 border-white py-2 bg-gray-200 ">
+                                    <div class="max-w-sm mx-auto rounded-md ">
                                         <div class="flex justify-center items-center">
                                             <button id="decrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
@@ -1201,14 +915,21 @@
                                             <button id="incrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
                                         </div>
+
                                     </div>
                                 </td>
-
+                                <td class="border-r-8 border-white py-2    bg-gray-200">£43.62</td>
+                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
+                                        name="add-outline"></ion-icon></td>
                             </tr>
                             <tr>
-                                <td class="border px-4 py-2 bg-gray-200">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
+                                <td class="border-r-8 border-white py-2   underline bg-gray-100">SMPT-18MM960360PANEL
+                                </td>
 
+                                <td class="border-r-8 border-white py-2    bg-gray-100">140x597 drawer front</td>
+                                <td class="border-r-8 border-white py-2    bg-gray-100">Indigo-Paint to order</td>
+                                <td class="border-r-8 border-white py-2 bg-gray-100 ">
+                                    <div class="max-w-sm mx-auto rounded-md ">
                                         <div class="flex justify-center items-center">
                                             <button id="decrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
@@ -1216,318 +937,13 @@
                                             <button id="incrementBtn"
                                                 class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
                                         </div>
+
                                     </div>
                                 </td>
-
+                                <td class="border-r-8 border-white py-2    bg-gray-100">£43.62</td>
+                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
+                                        name="add-outline"></ion-icon></td>
                             </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
-
-                                        <div class="flex justify-center items-center">
-                                            <button id="decrementBtn"
-                                                class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
-                                            <input type="number" class="w-6 h-6 border-2 border-black text-center">
-                                            <button id="incrementBtn"
-                                                class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
-                                        </div>
-                                    </div>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
-
-                                        <div class="flex justify-center items-center">
-                                            <button id="decrementBtn"
-                                                class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
-                                            <input type="number" class="w-6 h-6 border-2 border-black text-center">
-                                            <button id="incrementBtn"
-                                                class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
-                                        </div>
-                                    </div>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
-
-                                        <div class="flex justify-center items-center">
-                                            <button id="decrementBtn"
-                                                class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
-                                            <input type="number" class="w-6 h-6 border-2 border-black text-center">
-                                            <button id="incrementBtn"
-                                                class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
-                                        </div>
-                                    </div>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
-
-                                        <div class="flex justify-center items-center">
-                                            <button id="decrementBtn"
-                                                class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
-                                            <input type="number" class="w-6 h-6 border-2 border-black text-center">
-                                            <button id="incrementBtn"
-                                                class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
-                                        </div>
-                                    </div>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
-
-                                        <div class="flex justify-center items-center">
-                                            <button id="decrementBtn"
-                                                class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
-                                            <input type="number" class="w-6 h-6 border-2 border-black text-center">
-                                            <button id="incrementBtn"
-                                                class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
-                                        </div>
-                                    </div>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
-
-                                        <div class="flex justify-center items-center">
-                                            <button id="decrementBtn"
-                                                class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
-                                            <input type="number" class="w-6 h-6 border-2 border-black text-center">
-                                            <button id="incrementBtn"
-                                                class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
-                                        </div>
-                                    </div>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
-
-                                        <div class="flex justify-center items-center">
-                                            <button id="decrementBtn"
-                                                class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
-                                            <input type="number" class="w-6 h-6 border-2 border-black text-center">
-                                            <button id="incrementBtn"
-                                                class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
-                                        </div>
-                                    </div>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
-
-                                        <div class="flex justify-center items-center">
-                                            <button id="decrementBtn"
-                                                class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
-                                            <input type="number" class="w-6 h-6 border-2 border-black text-center">
-                                            <button id="incrementBtn"
-                                                class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
-                                        </div>
-                                    </div>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">
-                                    <div class="max-w-sm mx-auto  rounded-md ">
-
-                                        <div class="flex justify-center items-center">
-                                            <button id="decrementBtn"
-                                                class="counter-btn bg-gray-400 text-white px-2 mr-1 border rounded-none text-xl font-bold">-</button>
-                                            <input type="number" class="w-6 h-6 border-2 border-black text-center">
-                                            <button id="incrementBtn"
-                                                class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
-                                        </div>
-                                    </div>
-                                </td>
-
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-                <!-- quantity end -->
-
-                <!-- Nett price each start -->
-                <div class="hidden lg:inline">
-                    <table class="table-fixed ">
-                        <thead class="">
-                            <tr class="bg-[#808080] ">
-                                <th class="p-2  text-sm text-white">Nett price each</th>
-
-                            </tr>
-                        </thead>
-                        <tbody class="">
-
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-
-
 
 
 
@@ -1535,395 +951,20 @@
                     </table>
                 </div>
 
-                <!-- Nett Price total -->
-                <div class="hidden lg:inline">
-                    <table class="table-fixed ">
-                        <thead class="">
-                            <tr class="bg-[#808080]">
-                                <th class="p-2 text-sm text-white">Nett Price total</th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-100">£43.62</td>
-
-                            </tr>
-                            <tr>
-                                <td class="border px-4 py-2 bg-gray-200">£43.62</td>
-
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-                <div class="hidden lg:inline">
-                    <table class="table-fixed">
-                        <thead>
-                            <tr class="bg-[#808080]">
-                                <th class="p-4 text-white">Del</th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-100"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-                            <tr>
-                                <td class="border px-4 py-2 col-span-2 bg-gray-200"><ion-icon
-                                        name="add-outline"></ion-icon></td>
-
-                            </tr>
-
-
-
-
-
-                        </tbody>
-                    </table>
-                </div>
 
             </div>
 
 
             <!-- table for mobile version -->
 
-            <div class="grid grid-cols-2 mt-2 gap-1 p-4">
+            <div class="grid  mt-2 gap-1 p-4">
                 <!-- details start -->
                 <div class=" lg:hidden inline">
                     <table class="table-fixed lg:mx-auto ">
                         <thead>
                             <tr class="bg-[#808080] ">
-                                <th class="p-2 text-white">Product</th>
+                                <th class="p-2 border-r-8 border-white text-white">Product</th>
+                                <th class="p-2 text-white">Qty/Price/del</th>
 
                             </tr>
                         </thead>
@@ -1931,10 +972,25 @@
 
 
                             <tr>
-                                <td class="border px-2 py-6  bg-gray-200">
+                                <td class="border-r-8 border-white px-2 py- bg-gray-200">
                                     <p class="underline"><span>SMPT-140597</span></p>
                                     <p><span>140 x 579 drawerfront</span></p>
                                     <p><span>Indigo-paint to order</span></p>
+                                </td>
+                                <td class="border px-2 py-  bg-gray-200">
+
+                                    <div class=" px-2 flex items-center justify-center"> <button id="decrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
+                                        <input type="number" class="w-6 h-6 border-2 border-black text-center">
+                                        <button id="incrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
+
+                                    </div>
+                                    <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><ion-icon name="close-outline"
+                                            class="p-2 bg-white"></ion-icon></p>
+
                                 </td>
 
 
@@ -1942,113 +998,281 @@
 
 
                             <tr>
-                                <td class="border px-2 py-6  bg-gray-100">
+                                <td class="border-r-8 border-white px-2 py-  bg-gray-100">
                                     <p class="underline"><span>SMPT-140597</span></p>
                                     <p><span>140 x 579 drawerfront</span></p>
                                     <p><span>Indigo-paint to order</span></p>
                                 </td>
 
+                                <td class="border px-2 py-  bg-gray-100">
 
+                                    <div class=" px-2 flex items-center justify-center"> <button id="decrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
+                                        <input type="number" class="w-6 h-6 border-2 border-black text-center">
+                                        <button id="incrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
+
+                                    </div>
+                                    <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><ion-icon name="close-outline"
+                                            class="p-2 bg-white"></ion-icon></p>
+
+                                </td>
                             </tr>
 
 
                             <tr>
-                                <td class="border px-2 py-6 bg-gray-200 ">
+                                <td class="border-r-8 border-white px-2 py- bg-gray-200 ">
                                     <p class="underline"><span>SMPT-140597</span></p>
                                     <p><span>140 x 579 drawerfront</span></p>
                                     <p><span>Indigo-paint to order</span></p>
                                 </td>
+                                <td class="border px-2 py-  bg-gray-200">
 
+                                    <div class=" px-2 flex items-center justify-center"> <button id="decrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
+                                        <input type="number" class="w-6 h-6 border-2 border-black text-center">
+                                        <button id="incrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
+
+                                    </div>
+                                    <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><ion-icon name="close-outline"
+                                            class="p-2 bg-white"></ion-icon></p>
+
+                                </td>
 
                             </tr>
                             <tr>
-                                <td class="border px-2 py-6  bg-gray-100">
+                                <td class="border-r-8 border-white px-2 py-  bg-gray-100">
                                     <p class="underline"><span>SMPT-140597</span></p>
                                     <p><span>140 x 579 drawerfront</span></p>
                                     <p><span>Indigo-paint to order</span></p>
                                 </td>
+                                <td class="border px-2 py-  bg-gray-100">
 
+                                    <div class=" px-2 flex items-center justify-center"> <button id="decrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
+                                        <input type="number" class="w-6 h-6 border-2 border-black text-center">
+                                        <button id="incrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
+
+                                    </div>
+                                    <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><ion-icon name="close-outline"
+                                            class="p-2 bg-white"></ion-icon></p>
+
+                                </td>
 
                             </tr>
                             <tr>
-                                <td class="border px-2 py-6  bg-gray-200">
+                                <td class="border-r-8 border-white px-2 py-6  bg-gray-200">
                                     <p class="underline"><span>SMPT-140597</span></p>
                                     <p><span>140 x 579 drawerfront</span></p>
                                     <p><span>Indigo-paint to order</span></p>
                                 </td>
 
+                                <td class="border px-2 py-  bg-gray-200">
+
+                                    <div class=" px-2 flex items-center justify-center"> <button id="decrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
+                                        <input type="number" class="w-6 h-6 border-2 border-black text-center">
+                                        <button id="incrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
+
+                                    </div>
+                                    <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><ion-icon name="close-outline"
+                                            class="p-2 bg-white"></ion-icon></p>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-r-8 border-white px-2 py-6  bg-gray-100">
+                                    <p class="underline"><span>SMPT-140597</span></p>
+                                    <p><span>140 x 579 drawerfront</span></p>
+                                    <p><span>Indigo-paint to order</span></p>
+                                </td>
+
+                                <td class="border px-2 py-  bg-gray-100">
+
+                                    <div class=" px-2 flex items-center justify-center"> <button id="decrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
+                                        <input type="number" class="w-6 h-6 border-2 border-black text-center">
+                                        <button id="incrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
+
+                                    </div>
+                                    <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><ion-icon name="close-outline"
+                                            class="p-2 bg-white"></ion-icon></p>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-r-8 border-white px-2 py-6  bg-gray-200">
+                                    <p class="underline"><span>SMPT-140597</span></p>
+                                    <p><span>140 x 579 drawerfront</span></p>
+                                    <p><span>Indigo-paint to order</span></p>
+                                </td>
+                                <td class="border px-2 py-  bg-gray-200">
+
+                                    <div class=" px-2 flex items-center justify-center"> <button id="decrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
+                                        <input type="number" class="w-6 h-6 border-2 border-black text-center">
+                                        <button id="incrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
+
+                                    </div>
+                                    <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><ion-icon name="close-outline"
+                                            class="p-2 bg-white"></ion-icon></p>
+
+                                </td>
 
                             </tr>
                             <tr>
-                                <td class="border px-2 py-6  bg-gray-100">
+                                <td class="border-r-8 border-white px-2 py-6  bg-gray-100">
                                     <p class="underline"><span>SMPT-140597</span></p>
                                     <p><span>140 x 579 drawerfront</span></p>
                                     <p><span>Indigo-paint to order</span></p>
                                 </td>
 
+                                <td class="border px-2 py-  bg-gray-100">
+
+                                    <div class=" px-2 flex items-center justify-center"> <button id="decrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
+                                        <input type="number" class="w-6 h-6 border-2 border-black text-center">
+                                        <button id="incrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
+
+                                    </div>
+                                    <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><ion-icon name="close-outline"
+                                            class="p-2 bg-white"></ion-icon></p>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-r-8 border-white px-2 py-6  bg-gray-200">
+                                    <p class="underline"><span>SMPT-140597</span></p>
+                                    <p><span>140 x 579 drawerfront</span></p>
+                                    <p><span>Indigo-paint to order</span></p>
+                                </td>
+
+                                <td class="border px-2 py-  bg-gray-200">
+
+                                    <div class=" px-2 flex items-center justify-center"> <button id="decrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
+                                        <input type="number" class="w-6 h-6 border-2 border-black text-center">
+                                        <button id="incrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
+
+                                    </div>
+                                    <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><ion-icon name="close-outline"
+                                            class="p-2 bg-white"></ion-icon></p>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-r-8 border-white px-2 py-  bg-gray-100">
+                                    <p class="underline"><span>SMPT-140597</span></p>
+                                    <p><span>140 x 579 drawerfront</span></p>
+                                    <p><span>Indigo-paint to order</span></p>
+                                </td>
+
+                                <td class="border px-2 py-  bg-gray-100">
+
+                                    <div class=" px-2 flex items-center justify-center"> <button id="decrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
+                                        <input type="number" class="w-6 h-6 border-2 border-black text-center">
+                                        <button id="incrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
+
+                                    </div>
+                                    <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><ion-icon name="close-outline"
+                                            class="p-2 bg-white"></ion-icon></p>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-r-8 border-white px-2 py-  bg-gray-200">
+                                    <p class="underline"><span>SMPT-140597</span></p>
+                                    <p><span>140 x 579 drawerfront</span></p>
+                                    <p><span>Indigo-paint to order</span></p>
+                                </td>
+                                <td class="border px-2 py  bg-gray-200">
+
+                                    <div class=" px-2 flex items-center justify-center"> <button id="decrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
+                                        <input type="number" class="w-6 h-6 border-2 border-black text-center">
+                                        <button id="incrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
+
+                                    </div>
+                                    <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><ion-icon name="close-outline"
+                                            class="p-2 bg-white"></ion-icon></p>
+
+                                </td>
 
                             </tr>
                             <tr>
-                                <td class="border px-2 py-6  bg-gray-200">
+                                <td class="border-r-8 border-white px-2 py-6  bg-gray-100">
                                     <p class="underline"><span>SMPT-140597</span></p>
                                     <p><span>140 x 579 drawerfront</span></p>
                                     <p><span>Indigo-paint to order</span></p>
                                 </td>
 
+                                <td class="border px-2 py-  bg-gray-100">
 
+                                    <div class=" px-2 flex items-center justify-center"> <button id="decrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
+                                        <input type="number" class="w-6 h-6 border-2 border-black text-center">
+                                        <button id="incrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
+
+                                    </div>
+                                    <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><ion-icon name="close-outline"
+                                            class="p-2 bg-white"></ion-icon></p>
+
+                                </td>
                             </tr>
                             <tr>
-                                <td class="border px-2 py-6  bg-gray-100">
+                                <td class="border-r-8 border-white px-2 py-6  bg-gray-200">
                                     <p class="underline"><span>SMPT-140597</span></p>
                                     <p><span>140 x 579 drawerfront</span></p>
                                     <p><span>Indigo-paint to order</span></p>
                                 </td>
+                                <td class="border px-2 py-  bg-gray-200">
 
+                                    <div class=" px-2 flex items-center justify-center"> <button id="decrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
+                                        <input type="number" class="w-6 h-6 border-2 border-black text-center">
+                                        <button id="incrementBtn"
+                                            class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
 
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-6  bg-gray-200">
-                                    <p class="underline"><span>SMPT-140597</span></p>
-                                    <p><span>140 x 579 drawerfront</span></p>
-                                    <p><span>Indigo-paint to order</span></p>
+                                    </div>
+                                    <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
+                                    <p class="flex items-center justify-center"><ion-icon name="close-outline"
+                                            class="p-2 bg-white"></ion-icon></p>
+
                                 </td>
-
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-6  bg-gray-100">
-                                    <p class="underline"><span>SMPT-140597</span></p>
-                                    <p><span>140 x 579 drawerfront</span></p>
-                                    <p><span>Indigo-paint to order</span></p>
-                                </td>
-
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-6  bg-gray-200">
-                                    <p class="underline"><span>SMPT-140597</span></p>
-                                    <p><span>140 x 579 drawerfront</span></p>
-                                    <p><span>Indigo-paint to order</span></p>
-                                </td>
-
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-6  bg-gray-100">
-                                    <p class="underline"><span>SMPT-140597</span></p>
-                                    <p><span>140 x 579 drawerfront</span></p>
-                                    <p><span>Indigo-paint to order</span></p>
-                                </td>
-
-
-                            </tr>
-                            <tr>
-                                <td class="border px-2 py-6  bg-gray-200">
-                                    <p class="underline"><span>SMPT-140597</span></p>
-                                    <p><span>140 x 579 drawerfront</span></p>
-                                    <p><span>Indigo-paint to order</span></p>
-                                </td>
-
 
                             </tr>
 
@@ -2057,218 +1281,7 @@
                         </tbody>
                     </table>
                 </div>
-                <!-- Details end -->
-                <!-- quantity / Price / del -->
-                <div class="border border-none lg:hidden inline">
-                    <h5 class="bg-[#808080] py-2 text-white text-center">Qty/Price/del</h5>
-                    <div>
-
-
-                        <div class="bg-gray-200">
-                            <p class=" px-2 flex items-center justify-center"> <button id="decrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
-                                <input type="number" class="w-6 h-6 border-2 border-black text-center">
-                                <button id="incrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
-
-                            </p>
-                            <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
-                            <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
-                            <p class="flex items-center justify-center"><ion-icon name="close-outline"
-                                    class="p-2 bg-white"></ion-icon></p>
-                        </div>
-
-                        <div class="bg-gray-100">
-                            <p class=" px-2 flex items-center justify-center"> <button id="decrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
-                                <input type="number" class="w-6 h-6 border-2 border-black text-center">
-                                <button id="incrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
-
-                            </p>
-                            <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
-                            <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
-                            <p class="flex items-center justify-center"><ion-icon name="close-outline"
-                                    class="p-2 bg-white"></ion-icon></p>
-                        </div>
-
-                        <div class="bg-gray-200">
-                            <p class=" px-2 flex items-center justify-center"> <button id="decrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
-                                <input type="number" class="w-6 h-6 border-2 border-black text-center">
-                                <button id="incrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
-
-                            </p>
-                            <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
-                            <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
-                            <p class="flex items-center justify-center"><ion-icon name="close-outline"
-                                    class="p-2 bg-white"></ion-icon></p>
-                        </div>
-
-
-
-                        <div class="bg-gray-100">
-                            <p class=" px-2 flex items-center justify-center "> <button id="decrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
-                                <input type="number" class="w-6 h-6 border-2 border-black text-center">
-                                <button id="incrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
-
-                            </p>
-                            <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
-                            <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
-                            <p class="flex items-center justify-center"><ion-icon name="close-outline"
-                                    class="p-2 bg-white"></ion-icon></p>
-                        </div>
-
-                        <div class="bg-gray-200">
-                            <p class=" px-2 flex items-center justify-center "> <button id="decrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
-                                <input type="number" class="w-6 h-6 border-2 border-black text-center">
-                                <button id="incrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
-
-                            </p>
-                            <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
-                            <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
-                            <p class="flex items-center justify-center"><ion-icon name="close-outline"
-                                    class="p-2 bg-white"></ion-icon></p>
-                        </div>
-
-
-                        <div class="bg-gray-100">
-                            <p class=" px-2 flex items-center justify-center "> <button id="decrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
-                                <input type="number" class="w-6 h-6 border-2 border-black text-center">
-                                <button id="incrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
-
-                            </p>
-                            <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
-                            <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
-                            <p class="flex items-center justify-center"><ion-icon name="close-outline"
-                                    class="p-2 bg-white"></ion-icon></p>
-                        </div>
-
-                        <div class="bg-gray-200">
-                            <p class=" px-2 flex items-center justify-center "> <button id="decrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
-                                <input type="number" class="w-6 h-6 border-2 border-black text-center">
-                                <button id="incrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
-
-                            </p>
-                            <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
-                            <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
-                            <p class="flex items-center justify-center"><ion-icon name="close-outline"
-                                    class="p-2 bg-white"></ion-icon></p>
-                        </div>
-
-                        <div class="bg-gray-100">
-                            <p class=" px-2 flex items-center justify-center "> <button id="decrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
-                                <input type="number" class="w-6 h-6 border-2 border-black text-center">
-                                <button id="incrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
-
-                            </p>
-                            <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
-                            <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
-                            <p class="flex items-center justify-center"><ion-icon name="close-outline"
-                                    class="p-2 bg-white"></ion-icon></p>
-                        </div>
-
-
-                        <div class="bg-gray-200">
-                            <p class=" px-2 flex items-center justify-center "> <button id="decrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
-                                <input type="number" class="w-6 h-6 border-2 border-black text-center">
-                                <button id="incrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
-
-                            </p>
-                            <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
-                            <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
-                            <p class="flex items-center justify-center"><ion-icon name="close-outline"
-                                    class="p-2 bg-white"></ion-icon></p>
-                        </div>
-
-
-                        <div class="bg-gray-100">
-                            <p class=" px-2 flex items-center justify-center "> <button id="decrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
-                                <input type="number" class="w-6 h-6 border-2 border-black text-center">
-                                <button id="incrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
-
-                            </p>
-                            <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
-                            <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
-                            <p class="flex items-center justify-center"><ion-icon name="close-outline"
-                                    class="p-2 bg-white"></ion-icon></p>
-                        </div>
-
-                        <div class="bg-gray-200">
-                            <p class=" px-2 flex items-center justify-center "> <button id="decrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
-                                <input type="number" class="w-6 h-6 border-2 border-black text-center">
-                                <button id="incrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
-
-                            </p>
-                            <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
-                            <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
-                            <p class="flex items-center justify-center"><ion-icon name="close-outline"
-                                    class="p-2 bg-white"></ion-icon></p>
-                        </div>
-
-                        <div class="bg-gray-100">
-                            <p class=" px-2 flex items-center justify-center "> <button id="decrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
-                                <input type="number" class="w-6 h-6 border-2 border-black text-center">
-                                <button id="incrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
-
-                            </p>
-                            <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
-                            <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
-                            <p class="flex items-center justify-center"><ion-icon name="close-outline"
-                                    class="p-2 bg-white"></ion-icon></p>
-                        </div>
-
-                        <div class="bg-gray-200">
-                            <p class=" px-2 flex items-center justify-center "> <button id="decrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
-                                <input type="number" class="w-6 h-6 border-2 border-black text-center">
-                                <button id="incrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
-
-                            </p>
-                            <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
-                            <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
-                            <p class="flex items-center justify-center"><ion-icon name="close-outline"
-                                    class="p-2 bg-white"></ion-icon></p>
-                        </div>
-
-
-                        <div class="bg-gray-100">
-                            <p class=" px-2 flex items-center justify-center "> <button id="decrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-2 m-1 border rounded-none text-xl font-bold">-</button>
-                                <input type="number" class="w-6 h-6 border-2 border-black text-center">
-                                <button id="incrementBtn"
-                                    class="counter-btn bg-gray-400 text-white px-1 m-1 border-none rounded-none text-xl font-bold">+</button>
-
-                            </p>
-                            <p class="flex items-center justify-center"><span>Each: £20.22</span></p>
-                            <p class="flex items-center justify-center"><span>Total: £20.22</span></p>
-                            <p class="flex items-center justify-center"><ion-icon name="close-outline"
-                                    class="p-2 bg-white"></ion-icon></p>
-                        </div>
-
-
-                    </div>
-                </div>
+              
             </div>
 
             <!-- table for mobile version end-->
