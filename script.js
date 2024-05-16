@@ -48,3 +48,36 @@ document.querySelectorAll(".subMenu").forEach(function(subMenu) {
       event.preventDefault();
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Simulate a click on the first tab button to open it initially
+  document.querySelector(".tab-menu button").click();
+});
+
+
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("activ"); // Remove 'activ' class from all tab buttons
+  }
+  document.getElementById(cityName).style.display = "block"; // Display the content of the selected tab
+  evt.currentTarget.classList.add("activ"); // Add 'activ' class to the clicked tab button
+}

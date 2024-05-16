@@ -79,7 +79,7 @@
                 <div class="flex items-center text-white">
                     <p class="bg-[#6A7357] text-white text-md px-1 m-1 inline"><ion-icon name="person-outline"></ion-icon>
                     </p>
-                    <div class="bg-[#6A7357] flex gap-3  hidden lg:flex ">
+                    <div class="bg-[#6A7357]  gap-3  hidden lg:flex ">
     
                         <div class="grid">
                             <a href="#" class="flex items-center text-white ">
@@ -279,7 +279,7 @@
                         src="./assets/images/WhatsApp_Image_2024-05-06_at_6.45.21_PM-removebg-preview.png" alt="">
                     <div class="flex items-center gap-10 lg:gap-20">
                         <div class=" flex gap-1 lg:gap-0 items-center lg:inline">
-                            <small><span class="hidden lg:inline">Basket</span> Nett Price Total:</small>
+                            <small><span class="hidden lg:inline">Basket</span> Net Price Total:</small>
                             <p class="lg:text-2xl">£3,190.50</p>
                         </div>
                         <div class="flex items-center gap-1 lg:inline">
@@ -498,42 +498,42 @@
                            section navigation 
                         ---------------------
                         ####### -->
-                    <ul class="grid   lg:flex gap-1">
-                        <li class=""><a
-                                class=" btn py-2 lg:px-1 px-3 text-sm w-full block   hover:bg-[#6A7357] text-white rounded-none border-none bg-[#808080] ">User
-                                Information</a></li>
-                        <li><a
-                                class=" btn py-2 lg:px-1 px-3 text-sm w-full block  hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Company
-                                Information</a></li>
-                        <li><a
-                                class=" btn py-2 lg:px-1 px-3 text-sm w-full block  hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Key
-                                Contacts</a></li>
-                        <li><a
-                                class=" btn py-2 lg:px-1 px-3 text-sm w-full block  hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Price
-                                Lists</a>
+                    <ul class="grid tab-menu  lg:flex justify-between ">
+                        <li class="" ><button
+                            onclick="openCity(event, 'User')"    class="tablinks  py-2 lg:px-4 px-3 text-sm w-full block    text-white rounded-none border-none ">User
+                                Information</button></li>
+                        <li class="" ><button onclick="openCity(event, 'Company')"
+                                class="tablinks  py-2 lg:px-4 px-3 text-sm w-full block    text-white rounded-none border-none  ">Company
+                                Information</button></li>
+                        <li class="" ><button onclick="openCity(event, 'Key')"
+                                class="tablinks  py-2 lg:px-4 px-3 text-sm w-full block   text-white rounded-none border-none  ">Key
+                                Contacts</button></li>
+                        <li class="" ><button onclick="openCity(event, 'Price')"
+                                class="tablinks  py-2 lg:px-4 px-3 text-sm w-full block   text-white rounded-none border-none  ">Price
+                                Lists</button>
                         </li>
-                        <li><a
-                                class=" btn py-2 lg:px-1 px-3 text-sm w-full block  hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Delivery
-                                Addresses</a></li>
-                        <li><a
-                                class=" btn py-2 lg:px-1 px-3 text-sm w-full block  hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Baskets</a>
+                        <li class="" ><button onclick="openCity(event, 'Delivery')"
+                                class="tablinks  py-2 lg:px-4 px-3 text-sm w-full block    text-white rounded-none border-none  ">Delivery
+                                Addresses</button></li>
+                        <li class="" ><button onclick="openCity(event, 'Baskets')"
+                                class="tablinks btn py-2 lg:px-4 px-3 text-sm w-full block   text-white rounded-none border-none ">Baskets</button>
                         </li>
-                        <li><a
-                                class=" btn py-2 lg:px-1 px-3 text-sm w-full block   hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Orders</a>
+                        <li class="" > <button onclick="openCity(event, 'Orders')"
+                                class="tablinks  py-2 lg:px-4 px-3 text-sm w-full block     text-white rounded-none border-none ">Orders</button>
                         </li>
-                        <li><a
-                                class=" btn py-2 lg:px-1 px-3 text-sm w-full block  hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Pay
-                                Outstanding</a></li>
-                        <li><a
-                                class=" btn py-2 lg:px-1 px-3 text-sm w-full block  hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Quote
-                                Conversion</a></li>
-                        <li><a
-                                class=" btn py-2 lg:px-1 px-3 text-sm w-full block  hover:bg-[#6A7357]  text-white rounded-none border-none bg-[#808080] ">Promo
-                                Code</a>
+                        <li class="" ><button onclick="openCity(event, 'Pay')"
+                                class="tablinks  py-2 lg:px-4 px-3 text-sm w-full block   text-white rounded-none border-none  ">Pay
+                                Outstanding</button></li>
+                        <li class="" > <button onclick="openCity(event, 'Quote')"
+                                class="tablinks  py-2 lg:px-4 px-3 text-sm w-full block   text-white rounded-none border-none  ">Quote
+                                Conversion</button></li>
+                        <li class="tablinks" onclick="openCity(event, 'Promo')"><button
+                                class="  py-2 lg:px-4 px-3 text-sm w-full block   text-white rounded-none border-none ">Promo
+                                Code</button>
                         </li>
 
                     </ul>
-                    <div class="p-4">
+                    <div class="p-4 tabcontent" id="User" >
                         <h1>Orders</h1>
                         <div class="grid gap-2 items-center mb-3 lg:grid-cols-4 mt-2">
                             <div class="self-end">
@@ -543,8 +543,8 @@
                             </div>
                             <div class="self-end">
                                 <label for="status">Status:</label>
-                                <select id="status" style="border-radius:0;"
-                                    class=" p-2 focus:border-[#6A7357] mt-2 input-field date border border-gray-600 focus:border-0 w-full ">
+                                <select  id="status" style="border-radius: 3px; padding:  10px 0;"
+                                    class=" px-2  focus:border-[#6A7357] mt-2 input-field date border border-black focus:border-0 w-full ">
                                     <option disabled selected>All</option>
                                     <option>Unit 15 Hulls Lane</option>
                                     <option>Moira Road</option>
@@ -613,7 +613,7 @@
                                             <td>Invoiced</td>
                                             <td><a download
                                                     href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
-                                                    class="btn w-full py-1 px-1 text-sm w-full lg:block  bg-[#6A7357] text-white rounded-none border-none">Download
+                                                    class="btn w-full p-4 text-sm  lg:block  bg-[#6A7357] text-white rounded-none border-none">Download
                                                     Invoice</a></td>
 
 
@@ -636,7 +636,7 @@
                                             <td>Invoiced</td>
                                             <td><a download
                                                     href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
-                                                    class="btn w-full bg-[#6A7357] text-white rounded-none border-none py-1 px-1 text-sm w-full lg:block">Download
+                                                    class="btn  bg-[#6A7357] text-white rounded-none border-none py-1 px-1 text-sm w-full lg:block">Download
                                                     Invoice</a></td>
 
 
@@ -659,7 +659,7 @@
                                             <td>Invoiced</td>
                                             <td><a download
                                                     href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
-                                                    class="btn w-full py-1 px-1 text-sm w-full lg:block bg-[#6A7357] text-white rounded-none border-none">Download
+                                                    class="btn  py-1 px-1 text-sm w-full lg:block bg-[#6A7357] text-white rounded-none border-none">Download
                                                     Invoice</a></td>
 
 
@@ -682,7 +682,7 @@
                                             <td>Invoiced</td>
                                             <td><a download
                                                     href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
-                                                    class="btn w-full bg-[#6A7357] py-1 px-1 text-sm w-full lg:block text-white rounded-none border-none">Download
+                                                    class="btn  bg-[#6A7357] py-1 px-1 text-sm w-full lg:block text-white rounded-none border-none">Download
                                                     Invoice</a></td>
 
 
@@ -705,7 +705,7 @@
                                             <td>Invoiced</td>
                                             <td><a download
                                                     href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
-                                                    class="btn w-full py-1 px-1 text-sm w-full lg:block bg-[#6A7357] text-white rounded-none border-none">Download
+                                                    class="btn  py-1 px-1 text-sm w-full lg:block bg-[#6A7357] text-white rounded-none border-none">Download
                                                     Invoice</a></td>
 
 
@@ -728,7 +728,7 @@
                                             <td>Invoiced</td>
                                             <td><a download
                                                     href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
-                                                    class="btn w-full py-1 px-1 text-sm w-full lg:block bg-[#6A7357] text-white rounded-none border-none">Download
+                                                    class="btn  py-1 px-1 text-sm w-full lg:block bg-[#6A7357] text-white rounded-none border-none">Download
                                                     Invoice</a></td>
 
 
@@ -751,7 +751,7 @@
                                             <td>Invoiced</td>
                                             <td><a download
                                                     href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
-                                                    class="btn w-full py-1 px-1 text-sm w-full lg:block bg-[#6A7357] text-white rounded-none border-none">Download
+                                                    class="btn py-1 px-1 text-sm w-full lg:block bg-[#6A7357] text-white rounded-none border-none">Download
                                                     Invoice</a></td>
 
 
@@ -774,7 +774,7 @@
                                             <td>Invoiced</td>
                                             <td><a download
                                                     href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
-                                                    class="btn w-full py-1 px-1 text-sm w-full lg:block bg-[#6A7357] text-white rounded-none border-none">Download
+                                                    class="btn  py-1 px-1 text-sm w-full lg:block bg-[#6A7357] text-white rounded-none border-none">Download
                                                     Invoice</a></td>
 
 
@@ -1197,40 +1197,154 @@
 
                                 <ul class="flex items-center gap-2 mt-6">
                                     <li><a
-                                            class="btn p-2 rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">1</a>
+                                            class="btn px-4 py-3 rounded-none block hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">1</a>
                                     </li>
                                     <li><a
-                                            class="btn p-2 rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">2</a>
+                                            class="btn px-4 py-3 rounded-none block hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">2</a>
                                     </li>
                                     <li><a
-                                            class="btn p-2 rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">3</a>
+                                            class="btn px-4 py-3  rounded-none block hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">3</a>
                                     </li>
                                     <li><a
-                                            class="btn p-2 hidden lg:flex rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">4</a>
+                                            class="btn px-4 py-3  hidden lg:block rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">4</a>
                                     </li>
                                     <li><a
-                                            class="btn p-2 hidden lg:flex rounded-none rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">5</a>
+                                            class="btn px-4 py-3  hidden lg:block  rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">5</a>
                                     </li>
                                     <li><a
-                                            class="btn p-2 hidden lg:flex rounded-none rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">6</a>
+                                            class="btn px-4 py-3  hidden lg:block  rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">6</a>
                                     </li>
                                     <li><a
-                                            class="btn p-2 hidden lg:flex rounded-none rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">...</a>
+                                            class="btn px-4 py-3  hidden lg:block  rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">...</a>
                                     </li>
                                     <li><a
-                                            class="btn p-2 rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">Next</a>
+                                            class="btn px-4 py-4  rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">Next</a>
                                     </li>
                                     <li><a
-                                            class="btn p-2 rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">Last</a>
+                                            class="btn px-4 py-4  rounded-none hover:text-white hover:bg-[#6A7357] text-[#6A7357]  border border-[#6A7357]">Last</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
+                
+                        <div id="Company"  class="tabcontent bg-[#d6d2d2] py-8 px-3 ">
+                            <div>
+                                <h1 class="text-3xl font-semibold text-center"> Your dedicated account contacts at Uform </h1>
+                                <div class="grid my-8 gap-20 lg:gap-0 lg:grid-cols-2 justify-items-center items-center">
+                                    <div
+                                        class="grid justify-center justify-items-center text-center lg:flex lg:text-left  items-center gap-10">
+                                        <img class="max-w-[200px] round-full" src="https://i.ibb.co/LPZxpgL/Daco-5511364.png" alt="">
+                                        <div>
+                                            <h2 class="text-2xl font-semibold">Mark McNulty</h2>
+                                            <small>Area Sales Manager</small>
+                                            <p class="grid justify-items-center lg:flex lg:gap-20 lg:mt-8"> <span
+                                                    class="text-orange-300">Email:</span>mmcnuity@uform.co.uk
+                                            </p>
+                                            <p class="grid justify-items-center lg:flex lg:gap-[67px]"> <span
+                                                    class="text-orange-300">Mobile:</span>07971 625585</p>
+                                        </div>
+                
+                                    </div>
+                                    <div class="grid justify-center lg:flex items-center gap-10">
+                                        <img class="max-w-[200px] round-full" src="https://i.ibb.co/pwk1J7B/Png-Item-1284293.png"
+                                            alt="">
+                                        <div class="text-center lg:text-start">
+                                            <h2 class="text-2xl font-semibold">Lisa McLarnon</h2>
+                                            <small>Key Account Manager</small>
+                                            <p class="grid justify-items-center lg:flex lg:gap-20 lg:mt-8"> <span
+                                                    class="text-orange-300">Email:</span>Imciarnon@uform.co.uk</p>
+                                            <p class="grid justify-items-center lg:flex lg:gap-[67px]"> <span
+                                                    class="text-orange-300">Mobile:</span>0287965-1642</p>
+                                        </div>
+                
+                                    </div>
+                
+                                </div>
+                                <p class="text-center">Or call customer services on +44 (0) 287965 1650</p>
+                            </div>
+                        </div>
+                        <div id="Key"  class="tabcontent bg-[#d6d2d2] py-8 px-3 ">
+                            <div>
+                                <h1 class="text-3xl font-semibold text-center"> Key Contact </h1>
+                                
+                                
+                            </div>
+                        </div>
+                        <div id="Price"  class="tabcontent bg-[#d6d2d2] py-8 px-3 ">
+                            <div>
+                                <h1 class="text-3xl font-semibold text-center"> Price kist </h1>
+                                
+                                
+                            </div>
+                        </div>
+                        <div id="Delivery"  class="tabcontent bg-[#d6d2d2] py-8 px-3 ">
+                            <div>
+                                <h1 class="text-3xl font-semibold text-center"> Delivery Addresses </h1>
+                                
+                                
+                            </div>
+                        </div>
+                        <div id="Baskets"  class="tabcontent bg-[#d6d2d2] py-8 px-3 ">
+                            <div>
+                                <h1 class="text-3xl font-semibold text-center"> Baskets </h1>
+                                
+                                
+                            </div>
+                        </div>
+                        <div id="Orders"  class="tabcontent bg-[#d6d2d2] py-8 px-3 ">
+                            <div>
+                                <h1 class="text-3xl font-semibold text-center"> Orders </h1>
+                                
+                                
+                            </div>
+                        </div>
+                        <div id="Pay"  class="tabcontent bg-[#d6d2d2] py-8 px-3 ">
+                            <div>
+                                <h1 class="text-3xl font-semibold text-center"> Pay Outstanding </h1>
+                                
+                                
+                            </div>
+                        </div>
+                        <div id="Quote"  class="tabcontent bg-[#d6d2d2] py-8 px-3 ">
+                            <div>
+                                <h1 class="text-3xl font-semibold text-center"> Quote Conversion </h1>
+                                
+                                
+                            </div>
+                        </div>
+                        <div id="Promo"  class="tabcontent bg-[#d6d2d2] py-8 px-3 ">
+                            <div>
+                                <h1 class="text-3xl font-semibold text-center"> Promo Code </h1>
+                                
+                                
+                            </div>
+                        </div>
+                     
                 </div>
             </div>
 
         </section>
+        <!-- <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+          </div>
+          
+          <div id="London" class="tabcontent">
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+          </div>
+          
+          <div id="Paris" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p> 
+          </div>
+          
+          <div id="Tokyo" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div> -->
     </main>
     <!-- 
         --------------------
