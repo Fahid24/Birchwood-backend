@@ -291,3 +291,8 @@ table {
 .tablinks{
 	background: #6a7357;
 }
+
+.tab-menu {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+}
