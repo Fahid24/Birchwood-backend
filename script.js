@@ -63,7 +63,7 @@ document.querySelectorAll(".subMenu").forEach(function(subMenu) {
 
 document.addEventListener("DOMContentLoaded", function() {
   // Simulate a click on the first tab button to open it initially
-  document.querySelector(".tab-menu button").click();
+  document.querySelector(".tab-menu a").click();
 });
 
 
