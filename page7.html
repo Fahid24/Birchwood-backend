@@ -498,7 +498,7 @@
                            section navigation 
                         ---------------------
                         ####### -->
-                    <ul class="grid tab-menu  lg:flex justify-between ">
+                    <ul class="grid tab-menu  lg:flex justify-around  ">
                         <li class="" ><button
                             onclick="openCity(event, 'User')"    class="tablinks  py-2 lg:px-4 px-3 text-sm w-full block    text-white rounded-none border-none ">User
                                 Information</button></li>
@@ -527,8 +527,8 @@
                         <li class="" > <button onclick="openCity(event, 'Quote')"
                                 class="tablinks  py-2 lg:px-4 px-3 text-sm w-full block   text-white rounded-none border-none  ">Quote
                                 Conversion</button></li>
-                        <li class="tablinks" onclick="openCity(event, 'Promo')"><button
-                                class="  py-2 lg:px-4 px-3 text-sm w-full block   text-white rounded-none border-none ">Promo
+                        <li class="" ><button onclick="openCity(event, 'Promo')"
+                                class="tablinks  py-2 lg:px-4 px-3 text-sm w-full block   text-white rounded-none border-none ">Promo
                                 Code</button>
                         </li>
 
@@ -539,13 +539,13 @@
                             <div class="self-end">
                                 <label for="search">Search</label>
                                 <input id="search" type="text" name="search" placeholder="search" required
-                                    class="focus:border-[#6A7357] p-2 border border-black mt-2 input-field date">
+                                    class="focus:border-[#6A7357] text-black p-2 border border-black mt-2 input-field date">
                             </div>
                             <div 
                             
                             class="self-end">
                                 <label for="status">Status:</label>
-                                <select  id="status" style="border-radius: 3px; padding:  10px 0;"
+                                <select  id="status"  style="border-radius: 3px; padding:  10px 0;"
                                     class=" px-2  focus:border-[#6A7357] mt-2 input-field date border border-black focus:border-0 w-full ">
                                     <option disabled selected>All</option>
                                     <option>Unit 15 Hulls Lane</option>
@@ -557,15 +557,15 @@
                                 </select>
                             </div>
                             <div class="self-end">
-                                <label for="date">Created Between</label>
+                                <label for="date">Order Between</label>
                                 <input id="date" type="date" name="date" required
-                                    class="focus:border-[#6A7357] p-2 border border-black mt-2 input-field date">
+                                    class="focus:border-[#6A7357] p-2 text-black border border-black mt-2 input-field date">
                             </div>
 
                             <div class="self-end">
 
                                 <input id="date" type="date" name="date" required
-                                    class="focus:border-[#6A7357] p-2 border border-black mt-2 input-field date">
+                                    class="focus:border-[#6A7357] p-2 text-black border border-black mt-2 input-field date">
                             </div>
                         </div>
 
@@ -615,7 +615,7 @@
                                             <td>Invoiced</td>
                                             <td><a download
                                                     href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
-                                                    class="btn w-full p-4 text-sm  lg:block  bg-[#6A7357] text-white rounded-none border-none">Download
+                                                    class="btn w-full px-2 py-2 text-sm  lg:block  bg-[#6A7357] text-white rounded-none border-none">Download
                                                     Invoice</a></td>
 
 
@@ -638,7 +638,7 @@
                                             <td>Invoiced</td>
                                             <td><a download
                                                     href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
-                                                    class="btn  bg-[#6A7357] text-white rounded-none border-none py-1 px-1 text-sm w-full lg:block">Download
+                                                    class="btn  bg-[#6A7357] text-white rounded-none border-none px-2 py-2  text-sm w-full lg:block">Download
                                                     Invoice</a></td>
 
 
@@ -661,7 +661,7 @@
                                             <td>Invoiced</td>
                                             <td><a download
                                                     href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
-                                                    class="btn  py-1 px-1 text-sm w-full lg:block bg-[#6A7357] text-white rounded-none border-none">Download
+                                                    class="btn  px-2 py-2  text-sm w-full lg:block bg-[#6A7357] text-white rounded-none border-none">Download
                                                     Invoice</a></td>
 
 
@@ -684,7 +684,7 @@
                                             <td>Invoiced</td>
                                             <td><a download
                                                     href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
-                                                    class="btn  bg-[#6A7357] py-1 px-1 text-sm w-full lg:block text-white rounded-none border-none">Download
+                                                    class="btn  bg-[#6A7357] px-2 py-2  text-sm w-full lg:block text-white rounded-none border-none">Download
                                                     Invoice</a></td>
 
 
@@ -707,7 +707,7 @@
                                             <td>Invoiced</td>
                                             <td><a download
                                                     href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
-                                                    class="btn  py-1 px-1 text-sm w-full lg:block bg-[#6A7357] text-white rounded-none border-none">Download
+                                                    class="btn  px-2 py-2  text-sm w-full lg:block bg-[#6A7357] text-white rounded-none border-none">Download
                                                     Invoice</a></td>
 
 
@@ -730,7 +730,7 @@
                                             <td>Invoiced</td>
                                             <td><a download
                                                     href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
-                                                    class="btn  py-1 px-1 text-sm w-full lg:block bg-[#6A7357] text-white rounded-none border-none">Download
+                                                    class="btn  px-2 py-2  text-sm w-full lg:block bg-[#6A7357] text-white rounded-none border-none">Download
                                                     Invoice</a></td>
 
 
@@ -753,7 +753,7 @@
                                             <td>Invoiced</td>
                                             <td><a download
                                                     href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
-                                                    class="btn py-1 px-1 text-sm w-full lg:block bg-[#6A7357] text-white rounded-none border-none">Download
+                                                    class="btn px-2 py-2  text-sm w-full lg:block bg-[#6A7357] text-white rounded-none border-none">Download
                                                     Invoice</a></td>
 
 
@@ -776,7 +776,7 @@
                                             <td>Invoiced</td>
                                             <td><a download
                                                     href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
-                                                    class="btn  py-1 px-1 text-sm w-full lg:block bg-[#6A7357] text-white rounded-none border-none">Download
+                                                    class="btn  px-2 py-2  text-sm w-full lg:block bg-[#6A7357] text-white rounded-none border-none">Download
                                                     Invoice</a></td>
 
 
@@ -838,7 +838,7 @@
                                     <th>Invoice PDF</th>
                                     <td><a download
                                             href="https://octopi-digital.com/wp-content/uploads/2024/05/ODL-NEW-LOGO-1small-1.png"
-                                            class="btn py-1 px-1 text-sm w-full lg:block w-full bg-[#6A7357] text-white rounded-none border-none">Download
+                                            class="btn py-1 px-1 text-sm w-full lg:block  bg-[#6A7357] text-white rounded-none border-none">Download
                                             Invoice</a></td>
                                 </tr>
                                
