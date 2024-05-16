@@ -293,6 +293,7 @@ table {
 }
 
 .tab-menu {
+	text-align: center;
 	display: grid;
 	gap: 3px;
 	grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
